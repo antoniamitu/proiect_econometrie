@@ -1,10 +1,10 @@
 ### 💠Studentul 1 – „Teoreticianul și Analistul Explorator”
 **Focus:** fundamentare teoretică, descrierea datelor și concluzii finale.
 
--➡️ Răspunde de punctele **1.a** și **1.b**: documentează fenomenul analizat, caută și sintetizează cele 5–10 articole științifice relevante și explică mecanismele economice care justifică modelul ales (relația dintre variabila dependentă și explicative).
--➡️ Împreună cu Studentul 3, descrie structura setului de date: prezintă variabilele, sursele, unitățile de măsură și periodicitatea, precum și logica transformărilor aplicate (logaritmări, deflaționare, tratarea valorilor lipsă) pentru punctele **2.a** și **2.c**, dar din perspectivă explicativă în raport.
-➡️ Realizează și interpretează analiza descriptivă și exploratorie pentru punctul **2.b**: tabele de descriptivi, distribuții, histograme, scatterplot-uri, matrice de corelații și comentariile economice aferente.
-➡️ Coordonează redactarea secțiunii de **Discuții și Concluzii** (punctele **6.a**, **6.b**, **6.c**), integrând rezultatele obținute de Studentul 2 (modele clasice) și Studentul 3 (ML/regularizare); formulează concluziile finale, limitele studiului și posibile direcții de extindere.
+**➡️** Răspunde de punctele **1.a** și **1.b**: documentează fenomenul analizat, caută și sintetizează cele 5–10 articole științifice relevante și explică mecanismele economice care justifică modelul ales (relația dintre variabila dependentă și explicative).
+**➡️** Împreună cu Studentul 3, descrie structura setului de date: prezintă variabilele, sursele, unitățile de măsură și periodicitatea, precum și logica transformărilor aplicate (logaritmări, deflaționare, tratarea valorilor lipsă) pentru punctele **2.a** și **2.c**, dar din perspectivă explicativă în raport.
+**➡️** Realizează și interpretează analiza descriptivă și exploratorie pentru punctul **2.b**: tabele de descriptivi, distribuții, histograme, scatterplot-uri, matrice de corelații și comentariile economice aferente.
+**➡️** Coordonează redactarea secțiunii de **Discuții și Concluzii** (punctele **6.a**, **6.b**, **6.c**), integrând rezultatele obținute de Studentul 2 (modele clasice) și Studentul 3 (ML/regularizare); formulează concluziile finale, limitele studiului și posibile direcții de extindere.
 
 ---
 
