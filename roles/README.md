@@ -1,4 +1,3 @@
-
 ### 💠 Studentul 1 – „Teoreticianul și Analistul Explorator”
 
 * ➡️ Focus: fundamentare teoretică, descrierea datelor și concluzii finale.
@@ -28,5 +27,3 @@
 * ➡️ Dacă timpul permite, abordează punctul 2.e (explorare avansată): aplică tehnici precum PCA sau clustering pentru a identifica eventuale grupări sau structuri latente în date și furnizează graficele și interpretările de bază.
 * ➡️ Este responsabil de modelele de regularizare și Machine Learning pentru punctele 5.a, 5.b, 5.c: implementează Lasso, Ridge, Elastic Net (și eventual alte metode, dacă se dorește: Random Forest, Gradient Boosting etc.), antrenează modelele pe setul de train, le evaluează pe setul de test și compară performanțele cu modelul clasic al Studentului 2 (prin aceeași metrici RMSE/MAE etc.).
 * ➡️ Contribuie la discuția privind diferența între modele explicative și modele predictive, oferind input pentru secțiunea 5.c și pentru concluziile de la punctul 6, în special în ceea ce privește compromisurile între interpretabilitate și acuratețea predicției.
-
-Așa îți apar sigur una sub alta în GitHub.
