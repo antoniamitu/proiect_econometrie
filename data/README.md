@@ -12,5 +12,3 @@
 ➡️ **X5 – GDP per capita, PPP (constant 2021)** (Sursa: World Bank, cod: *gdp_pc_ppp*) – **variabilă de control.** Indicator al nivelului real de trai. Țările mai bogate tind să aibă populații cu venituri mai mari, cu o capacitate mai mare de economisire. Introducerea acestei variabile asigură că efectul observat al infrastructurii sau instituțiilor asupra depozitelor bancare nu este doar o consecință a nivelului de dezvoltare economică (evită Omitted Variable Bias).
 
 ➡️ **D – High_Freedom** (dummy derivată din scorul general EFW, cod: *high_freedom*) – **variabilă dummy.** High_Freedom = 1 dacă scorul total de libertate economică al țării > mediana eșantionului, 0 altfel. Captează condițiile macroeconomice generale și clima economică în care operează sistemul bancar. Permite testarea ipotezei că infrastructura financiară (sucursale/ATM-uri) are efecte diferite într-un mediu economic liber comparativ cu unul restrictiv (ex.: *ATMs × High_Freedom*).
-
-Dacă vrei, pot transforma această secțiune și într-un fișier **README.md** complet pentru GitHub.
