@@ -1,0 +1,6 @@
+--- REZULTATE COMPARATIE MODELE ---
+AIC Simplu: 1047.375  vs AIC Extins: 1050.551 
+
+--- PROGNOZA ROMANIA ---
+       fit      lwr      upr
+1 85.52794 68.26372 102.7922
