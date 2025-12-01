@@ -1,0 +1,20 @@
+=== RAPORT DIAGNOSTIC OUTLIERI ===
+Data: 20423 
+
+Observatii totale (brute): 135 
+Observatii dupa eliminare outlieri: 132 
+Outlieri eliminati: 3 
+
+Tari eliminate:
+# A tibble: 3 × 2
+  country              deposits_gdp
+  <chr>                       <dbl>
+1 Hong Kong SAR, China         549.
+2 Mauritania                   279.
+3 Singapore                    245.
+
+
+IMPACT PE R2:
+R2 Adj (cu outlieri):   0.1601 
+R2 Adj (fara outlieri): 0.2235 
+Imbunatatire: 6.34 %

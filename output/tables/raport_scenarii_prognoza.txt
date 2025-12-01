@@ -1,0 +1,18 @@
+=== RAPORT SCENARII DE PROGNOZA ===
+Data: 20423 
+
+Model utilizat: OLS Simplu (Etapa 3) 
+
+--- COMPARATIE MODELE ---
+                  Model        R2    R2_Adj      AIC      BIC
+1      OLS Simplu (Ref) 0.2475164 0.2106300 1047.375 1066.150
+2    Extins 1 (Log+Int) 0.2532389 0.2009657 1050.551 1074.690
+3 Extins 2 (Polynomial) 0.2477608 0.2030733 1049.340 1070.797
+
+
+--- SCENARII ROMANIA ---
+           Scenariu  Branches Regulation Deposits_Prognozat Impact_pp
+1            Actual  63.38404       6.35           34.53338   0.00000
+2  Dublare Branches 126.76809       6.35           85.52794  50.99456
+3   Regulation +0.5  63.38404       6.85           70.42089  35.88751
+4 Scenariu Combinat 126.76809       6.85           90.49902  55.96564
