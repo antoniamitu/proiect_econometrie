@@ -1,5 +1,5 @@
 === RAPORT MODEL OLS (VARIANTA CURATA) ===
-Data: 20423 
+Data: 20424 
 
 SPECIFICATIE MODEL:
 Y = deposits_gdp

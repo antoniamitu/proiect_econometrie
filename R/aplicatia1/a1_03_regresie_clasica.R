@@ -72,10 +72,6 @@ cat("
    Coeficient:", round(coefs["atms_100k"], 4), "
    → Efect mai slab decat sucursalele (contactul uman > automatizare)
 
-3. LEGAL RIGHTS (Drepturi de proprietate):
-   Coeficient:", round(coefs["legal_rights"], 4), "
-   → Protectia juridica => incredere in sistem => mai multe depozite
-
 4. REGULATION (Libertate economica):
    Coeficient:", round(coefs["regulation"], 4), "
    → Reglementari flexibile faciliteaza activitatea bancara
