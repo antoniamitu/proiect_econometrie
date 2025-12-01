@@ -1,0 +1,7 @@
+"Variabila","Skewness","Kurtosis","Interpretare_Skew","Interpretare_Kurt"
+"deposits_gdp",4.90593026935067,37.354564545776,"Asimetrie dreapta (tail lung)","Leptocurtica (outliers)"
+"branches_100k",1.4602198302769,5.21082515524338,"Asimetrie dreapta (tail lung)","Leptocurtica (outliers)"
+"atms_100k",3.12684222788999,15.523866284362,"Asimetrie dreapta (tail lung)","Leptocurtica (outliers)"
+"legal_rights",0.377738135687248,2.34690394475895,"Aproximativ simetrica","Platycurtica/Mesocurtica"
+"regulation",-0.26249763313116,3.37778950704933,"Aproximativ simetrica","Leptocurtica (outliers)"
+"gdp_pc_ppp",1.68063393177703,6.760764959208,"Asimetrie dreapta (tail lung)","Leptocurtica (outliers)"
