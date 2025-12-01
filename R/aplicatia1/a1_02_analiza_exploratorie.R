@@ -305,6 +305,10 @@ print(atipic_2)
 # SALVARE RAPORT FINAL
 # ==============================================================================
 
+# 1. Inchidem orice conexiune veche ramasa deschisa accidental
+while(sink.number() > 0) sink()
+
+# 2. Deschidem fisierul
 sink("output/tables/raport_analiza_exploratorie.txt")
 cat("=== RAPORT ANALIZA EXPLORATORIE (STUDENT 1) ===\n")
 cat("Data:", Sys.Date(), "\n\n")
