@@ -1,5 +1,5 @@
 === RAPORT DIAGNOSTIC OUTLIERI ===
-Data: 20423 
+Data: 20424 
 
 Observatii totale (brute): 135 
 Observatii dupa eliminare outlieri: 132 
