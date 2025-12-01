@@ -52,6 +52,6 @@ COMPARATIE TOP 10 vs BOTTOM 10:
 CONCLUZII PRELIMINARE:
 1. Variabila 'deposits_gdp' prezinta o distributie asimetrica dreapta (skewness pozitiv).
 2. Existenta unor outlieri majori (HK, Singapore, Mauritania) - vor fi tratati de Student 2.
-3. Corelatia cea mai puternica cu Y: branches_100k (r = 0.164 )
+3. Corelatia cea mai puternica cu Y: regulation (r = 0.39 )
 4. Tarile cu depozite mari tind sa aiba infrastructura bancara mai dezvoltata.
 5. PIB/capita nu este cel mai puternic predictor - infrastructura conteaza mai mult!

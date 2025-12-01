@@ -1,5 +1,5 @@
 === RAPORT SCENARII DE PROGNOZA ===
-Data: 20423 
+Data: 2025-12-02 
 
 Model utilizat: OLS Simplu (Etapa 3) 
 
@@ -10,9 +10,13 @@ Model utilizat: OLS Simplu (Etapa 3)
 3 Extins 2 (Polynomial) 0.2477608 0.2030733 1049.340 1070.797
 
 
---- SCENARII ROMANIA ---
-           Scenariu  Branches Regulation Deposits_Prognozat Impact_pp
-1            Actual  63.38404       6.35           34.53338   0.00000
-2  Dublare Branches 126.76809       6.35           85.52794  50.99456
-3   Regulation +0.5  63.38404       6.85           70.42089  35.88751
-4 Scenariu Combinat 126.76809       6.85           90.49902  55.96564
+--- ANALIZA DETALIATA SCENARII ROMANIA ---
+           Scenariu Impact_Total_pp Impact_Direct_Investitie Efect_CatchUp_Convergenta
+1  Dublare Branches            51.3                    20.08                     31.22
+2   Regulation +0.5            36.4                     4.97                     31.42
+3 Scenariu Combinat            55.9                    25.05                     30.85
+
+
+--- EXPLICATIE ECONOMICA ---
+Diferenta dintre impactul total si cel direct sugereaza ca Romania are un potential latent
+semnificativ de crestere a intermedierii financiare, care ar fi deblocat prin investitii.

@@ -242,33 +242,73 @@ cat("Depozite actuale:", round(date_romania$deposits_gdp, 2), "% PIB\n")
 cat("Depozite prognozate:", round(prognoza3[1], 2), "% PIB\n")
 cat("Impact estimat TOTAL: +", round(prognoza3[1] - date_romania$deposits_gdp, 2), " pp\n")
 
-# ------------------------------------------------------------------------------
-# INTERPRETARE ECONOMICA A SCENARIILOR
-# ------------------------------------------------------------------------------
+# ==============================================================================
+# CALCUL DETALIAT IMPACT: DIRECT vs CATCH-UP (Corectie Economica)
+# ==============================================================================
 
-cat("\n\n=== INTERPRETARE ECONOMICA ===\n")
-cat("
-1. Dublarea sucursalelor ar genera un impact direct de ~", 
-    round(prognoza1[1] - date_romania$deposits_gdp, 1), " pp
-   → Acest efect include atat influenta directa cat si un 'catch-up effect'
-   → Romania porneste de la un nivel sub medie (", round(date_romania$deposits_gdp, 1), "%)
-   → Tendinta de convergenta amplifica impactul
+cat("\n\n=== DESCOMPUNEREA IMPACTULUI (Analiza Nuantata) ===\n")
 
-2. Imbunatatirea reglementarii (+0.5 pct) => +", 
-    round(prognoza2[1] - date_romania$deposits_gdp, 1), " pp
-   → Efect institutional: mai putina birocratie => mai multa activitate bancara
+# 1. Extragem coeficientii relevanti din modelul optim
+# (Folosim model_optim care este fie cel simplu, fie cel extins, selectat automat mai sus)
+coef_branches <- coef(model_optim)["branches_100k"]
+coef_regulation <- coef(model_optim)["regulation"]
 
-3. Scenariu combinat => +", 
-    round(prognoza3[1] - date_romania$deposits_gdp, 1), " pp
-   → Efectele NU sunt perfect aditive (exista diminishing returns)
-   → O reforma completa necesita timp (3-5 ani implementare)
-\n")
+# Daca un coeficient nu exista (ex: regulation nu e in model), il punem 0
+if(is.na(coef_branches)) coef_branches <- 0
+if(is.na(coef_regulation)) coef_regulation <- 0
+
+# 2. Calculam Impactul DIRECT (Ceteris Paribus)
+# Scenariu 1: Dublare Branches (Crestere cu o valoare egala cu cea initiala)
+delta_branches <- date_romania$branches_100k 
+impact_direct_1 <- coef_branches * delta_branches
+
+# Scenariu 2: Regulation +0.5
+delta_regulation <- 0.5
+impact_direct_2 <- coef_regulation * delta_regulation
+
+# Scenariu 3: Combinat
+impact_direct_3 <- impact_direct_1 + impact_direct_2
+
+# 3. Calculam Impactul TOTAL (Prognoza Model - Valoare Reala)
+impact_total_1 <- prognoza1[1] - date_romania$deposits_gdp
+impact_total_2 <- prognoza2[1] - date_romania$deposits_gdp
+impact_total_3 <- prognoza3[1] - date_romania$deposits_gdp
+
+# 4. Tabel Detaliat pentru Analiza
+tabel_analiza <- data.frame(
+  Scenariu = c("Dublare Branches", "Regulation +0.5", "Scenariu Combinat"),
+  Impact_Total_pp = c(impact_total_1, impact_total_2, impact_total_3),
+  Impact_Direct_Investitie = c(impact_direct_1, impact_direct_2, impact_direct_3),
+  Efect_CatchUp_Convergenta = c(impact_total_1 - impact_direct_1, 
+                                impact_total_2 - impact_direct_2, 
+                                impact_total_3 - impact_direct_3)
+)
+
+tabel_print <- tabel_analiza
+tabel_print[, 2:4] <- round(tabel_print[, 2:4], 2)
+print(tabel_print)
+
+# ==============================================================================
+# INTERPRETARE ECONOMICA FINALA (Text pentru Raport)
+# ==============================================================================
+
+cat("\n=== INTERPRETARE ECONOMICA FINALĂ ===\n")
+cat("1. SCENARIU DUBLARE SUCURSALE:\n")
+cat("   - Impact Total Prognozat: +", round(impact_total_1, 1), " pp\n")
+cat("   - Din care Impact Direct (Investitie): +", round(impact_direct_1, 1), " pp\n")
+cat("     (Acesta este castigul garantat de infrastructura noua)\n")
+cat("   - Din care Efect Catch-up: +", round(impact_total_1 - impact_direct_1, 1), " pp\n")
+cat("     (Aceasta este corectarea sub-performantei actuale a Romaniei fata de potential)\n\n")
+
+cat("2. DISCLAIMER DE PROGNOZA:\n")
+cat("   Prognoza de ~85% depozite/PIB este un echilibru pe termen lung.\n")
+cat("   Pe termen scurt (1-3 ani), ne asteptam la o crestere mai apropiata de componenta directa (~20pp).\n")
 
 # ==============================================================================
 # SALVARE REZULTATE
 # ==============================================================================
 
-# Tabel comparativ scenarii
+# Tabel comparativ scenarii (Format simplu pentru CSV)
 tabel_scenarii <- data.frame(
   Scenariu = c("Actual", "Dublare Branches", "Regulation +0.5", "Scenariu Combinat"),
   Branches = c(date_romania$branches_100k, scenariu1$branches_100k, 
@@ -277,24 +317,30 @@ tabel_scenarii <- data.frame(
                  scenariu2$regulation, scenariu3$regulation),
   Deposits_Prognozat = c(date_romania$deposits_gdp, 
                          prognoza1[1], prognoza2[1], prognoza3[1]),
-  Impact_pp = c(0, 
-                prognoza1[1] - date_romania$deposits_gdp,
-                prognoza2[1] - date_romania$deposits_gdp,
-                prognoza3[1] - date_romania$deposits_gdp)
+  Impact_Total_pp = c(0, impact_total_1, impact_total_2, impact_total_3)
 )
 
 write.csv(tabel_scenarii, "output/tables/scenarii_prognoza_romania.csv", row.names = FALSE)
 write.csv(comparatie, "output/tables/comparatie_modele_extinse.csv", row.names = FALSE)
 
-# Salvare raport text
+# Salvare raport text detaliat
+while(sink.number() > 0) sink()
 sink("output/tables/raport_scenarii_prognoza.txt")
 cat("=== RAPORT SCENARII DE PROGNOZA ===\n")
-cat("Data:", Sys.Date(), "\n\n")
+cat("Data:", as.character(Sys.Date()), "\n\n")
 cat("Model utilizat:", ifelse(folosim_model_din_etapa3, "OLS Simplu (Etapa 3)", "Model Extins"), "\n\n")
+
 cat("--- COMPARATIE MODELE ---\n")
 print(comparatie)
-cat("\n\n--- SCENARII ROMANIA ---\n")
-print(tabel_scenarii)
+
+cat("\n\n--- ANALIZA DETALIATA SCENARII ROMANIA ---\n")
+tabel_print <- tabel_analiza
+tabel_print[, 2:4] <- round(tabel_print[, 2:4], 2)
+print(tabel_print)
+
+cat("\n\n--- EXPLICATIE ECONOMICA ---\n")
+cat("Diferenta dintre impactul total si cel direct sugereaza ca Romania are un potential latent\n")
+cat("semnificativ de crestere a intermedierii financiare, care ar fi deblocat prin investitii.\n")
 sink()
 
-cat("\n✓ ETAPA 4 FINALIZATA! Rezultate salvate in output/tables/\n")
+cat("\n✓ ETAPA 4 FINALIZATA! Raportul corectat (cu impact direct vs catch-up) a fost salvat.\n")

@@ -298,7 +298,7 @@ atipic_2 <- df_analysis %>%
   select(country, deposits_gdp, branches_100k, gdp_pc_ppp) %>%
   arrange(deposits_gdp)
 
-cat("\nTari cu INFRASTRUCTURE MARE dar DEPOZITE SCAZUTE:\n")
+cat("\nTari cu INFRASTRUCTURA MARE dar DEPOZITE SCAZUTE:\n")
 print(atipic_2)
 
 # ==============================================================================
@@ -309,7 +309,7 @@ print(atipic_2)
 while(sink.number() > 0) sink()
 
 # 2. Deschidem fisierul
-sink("output/tables/raport_analiza_exploratorie.txt")
+sink("output/tables/raport_analiza_exploratorie.txt", split = TRUE)
 cat("=== RAPORT ANALIZA EXPLORATORIE (STUDENT 1) ===\n")
 cat("Data:", Sys.Date(), "\n\n")
 
@@ -334,7 +334,11 @@ print(comparison_print)
 cat("\n\nCONCLUZII PRELIMINARE:\n")
 cat("1. Variabila 'deposits_gdp' prezinta o distributie asimetrica dreapta (skewness pozitiv).\n")
 cat("2. Existenta unor outlieri majori (HK, Singapore, Mauritania) - vor fi tratati de Student 2.\n")
-cat("3. Corelatia cea mai puternica cu Y: branches_100k (r =", round(cor_matrix["deposits_gdp", "branches_100k"], 3), ")\n")
+cor_cu_y <- cor_matrix["deposits_gdp", ]
+cor_cu_y_fara_y <- cor_cu_y[names(cor_cu_y) != "deposits_gdp"]
+max_cor_var <- names(which.max(abs(cor_cu_y_fara_y)))
+max_cor_val <- cor_cu_y_fara_y[max_cor_var]
+cat("3. Corelatia cea mai puternica cu Y:", max_cor_var, "(r =", round(max_cor_val, 3), ")\n")
 cat("4. Tarile cu depozite mari tind sa aiba infrastructura bancara mai dezvoltata.\n")
 cat("5. PIB/capita nu este cel mai puternic predictor - infrastructura conteaza mai mult!\n")
 

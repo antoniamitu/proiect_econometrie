@@ -207,6 +207,7 @@ Decizia de eliminare asigura OMOGENITATEA esantionului si VALIDITATEA inferentei
 # ==============================================================================
 
 # Cream un raport text
+while(sink.number() > 0) sink()
 sink("output/tables/raport_diagnostic_outlieri.txt")
 cat("=== RAPORT DIAGNOSTIC OUTLIERI ===\n")
 cat("Data:", Sys.Date(), "\n\n")

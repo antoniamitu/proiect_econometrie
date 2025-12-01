@@ -27,8 +27,7 @@ df <- read_excel("data/raw/Aplication1_CrossSectionalData.xlsx", skip = 1)
 # 3. ELIMINAREA OUTLIERILOR
 df_clean <- df %>%
   filter(deposits_gdp < 200) %>%
-  select(deposits_gdp, branches_100k, atms_100k, legal_rights, 
-         regulation, gdp_pc_ppp, country) %>%
+  select(deposits_gdp, branches_100k, atms_100k, regulation, gdp_pc_ppp, country) %>%
   na.omit()
 
 cat("=== PRELUCRARE DATE ===\n")
@@ -51,8 +50,8 @@ cat("Test set:", nrow(data_test), "observatii\n\n")
 
 cat("=== PASUL 3.a: ESTIMAREA MODELULUI OLS ===\n\n")
 
-model_ols_clean <- lm(deposits_gdp ~ branches_100k + atms_100k + legal_rights + 
-                        regulation + gdp_pc_ppp, 
+# Am eliminat 'legal_rights' din cauza multicoliniaritatii cu 'regulation'
+model_ols_clean <- lm(deposits_gdp ~ branches_100k + atms_100k + regulation + gdp_pc_ppp, 
                       data = data_train)
 
 # Afisare rezultate detaliate
@@ -244,6 +243,7 @@ saveRDS(data_test, "data/processed/data_test.rds")
 cat("✓ Date salvate pentru Student 3: data/processed/\n")
 
 # 4. Salvam un raport text complet
+while(sink.number() > 0) sink()
 sink("output/tables/raport_model_ols_clean.txt")
 cat("=== RAPORT MODEL OLS (VARIANTA CURATA) ===\n")
 cat("Data:", Sys.Date(), "\n\n")
