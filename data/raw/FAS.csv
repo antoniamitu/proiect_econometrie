@@ -1,0 +1,406 @@
+﻿DATASET,SERIES_CODE,OBS_MEASURE,COUNTRY,INDICATOR,TYPE_OF_TRANSFORMATION,FREQUENCY,SCALE,2022
+IMF.STA:FAS(4.0.0),IND.OUTD_COMBANK.POGDP.A,OBS_VALUE,India,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,64.23608664
+IMF.STA:FAS(4.0.0),BIH.OUTD_COMBANK.POGDP.A,OBS_VALUE,Bosnia and Herzegovina,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,49.83619165
+IMF.STA:FAS(4.0.0),CYP.OUTD_COMBANK.POGDP.A,OBS_VALUE,Cyprus,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,126.465189
+IMF.STA:FAS(4.0.0),BGR.FA18N.PHTADLT_NUM.A,OBS_VALUE,Bulgaria,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,120.7315209
+IMF.STA:FAS(4.0.0),FRA.OUTD_COMBANK.POGDP.A,OBS_VALUE,France,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,47.21189003
+IMF.STA:FAS(4.0.0),ARM.OUTD_COMBANK.POGDP.A,OBS_VALUE,"Armenia, Republic of","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,40.0726243
+IMF.STA:FAS(4.0.0),GEO.OUTD_COMBANK.POGDP.A,OBS_VALUE,Georgia,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,38.35638483
+IMF.STA:FAS(4.0.0),PER.OUTD_COMBANK.POGDP.A,OBS_VALUE,Peru,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,33.80813112
+IMF.STA:FAS(4.0.0),ISL.OUTD_COMBANK.POGDP.A,OBS_VALUE,Iceland,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,52.17235971
+IMF.STA:FAS(4.0.0),MNE.OUTD_COMBANK.POGDP.A,OBS_VALUE,Montenegro,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,58.54156756
+IMF.STA:FAS(4.0.0),HUN.OUTD_COMBANK.POGDP.A,OBS_VALUE,Hungary,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,42.50877748
+IMF.STA:FAS(4.0.0),NIC.OUTD_COMBANK.POGDP.A,OBS_VALUE,Nicaragua,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,30.44196916
+IMF.STA:FAS(4.0.0),MYS.OUTD_COMBANK.POGDP.A,OBS_VALUE,Malaysia,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,92.83788705
+IMF.STA:FAS(4.0.0),ARG.OUTD_COMBANK.POGDP.A,OBS_VALUE,Argentina,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,23.29050795
+IMF.STA:FAS(4.0.0),CRI.OUTD_COMBANK.POGDP.A,OBS_VALUE,Costa Rica,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,50.39988323
+IMF.STA:FAS(4.0.0),MDA.OUTD_COMBANK.POGDP.A,OBS_VALUE,"Moldova, Republic of","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,34.48300912
+IMF.STA:FAS(4.0.0),UGA.OUTD_COMBANK.POGDP.A,OBS_VALUE,Uganda,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,18.39453436
+IMF.STA:FAS(4.0.0),LVA.OUTD_COMBANK.POGDP.A,OBS_VALUE,"Latvia, Republic of","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,47.45749184
+IMF.STA:FAS(4.0.0),FIN.OUTD_COMBANK.POGDP.A,OBS_VALUE,Finland,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,35.16326562
+IMF.STA:FAS(4.0.0),BWA.OUTD_COMBANK.POGDP.A,OBS_VALUE,Botswana,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,23.71628608
+IMF.STA:FAS(4.0.0),CAN.OUTD_COMBANK.POGDP.A,OBS_VALUE,Canada,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,95.84238883
+IMF.STA:FAS(4.0.0),EST.OUTD_COMBANK.POGDP.A,OBS_VALUE,"Estonia, Republic of","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,58.62057749
+IMF.STA:FAS(4.0.0),MLT.OUTD_COMBANK.POGDP.A,OBS_VALUE,Malta,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,110.6767761
+IMF.STA:FAS(4.0.0),DEU.OUTD_COMBANK.POGDP.A,OBS_VALUE,Germany,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,31.14015453
+IMF.STA:FAS(4.0.0),AZE.OUTD_COMBANK.POGDP.A,OBS_VALUE,"Azerbaijan, Republic of","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,25.205134
+IMF.STA:FAS(4.0.0),HND.OUTD_COMBANK.POGDP.A,OBS_VALUE,Honduras,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,68.93192859
+IMF.STA:FAS(4.0.0),JAM.OUTD_COMBANK.POGDP.A,OBS_VALUE,Jamaica,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,58.43755049
+IMF.STA:FAS(4.0.0),AUT.OUTD_COMBANK.POGDP.A,OBS_VALUE,Austria,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,28.2333238
+IMF.STA:FAS(4.0.0),CZE.FA26N.PHTADLT_NUM.A,OBS_VALUE,Czech Republic,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,21.93078838
+IMF.STA:FAS(4.0.0),CZE.FA18N.PHTADLT_NUM.A,OBS_VALUE,Czech Republic,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,76.69139177
+IMF.STA:FAS(4.0.0),ECU.OUTD_COMBANK.POGDP.A,OBS_VALUE,Ecuador,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,37.46220624
+IMF.STA:FAS(4.0.0),ALB.OUTD_COMBANK.POGDP.A,OBS_VALUE,Albania,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,64.54392476
+IMF.STA:FAS(4.0.0),COL.OUTD_COMBANK.POGDP.A,OBS_VALUE,Colombia,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,40.74908102
+IMF.STA:FAS(4.0.0),CZE.OUTD_COMBANK.POGDP.A,OBS_VALUE,Czech Republic,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,68.52318737
+IMF.STA:FAS(4.0.0),SAU.OUTD_COMBANK.POGDP.A,OBS_VALUE,Saudi Arabia,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,53.79528666
+IMF.STA:FAS(4.0.0),IRL.OUTD_COMBANK.POGDP.A,OBS_VALUE,Ireland,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,40.62149669
+IMF.STA:FAS(4.0.0),BGR.OUTD_COMBANK.POGDP.A,OBS_VALUE,Bulgaria,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,66.64527085
+IMF.STA:FAS(4.0.0),BRA.OUTD_COMBANK.POGDP.A,OBS_VALUE,Brazil,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,39.2098543
+IMF.STA:FAS(4.0.0),HRV.OUTD_COMBANK.POGDP.A,OBS_VALUE,"Croatia, Republic of","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,77.17671429
+IMF.STA:FAS(4.0.0),CHL.OUTD_COMBANK.POGDP.A,OBS_VALUE,Chile,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,59.24738377
+IMF.STA:FAS(4.0.0),BGR.FA26N.PHTADLT_NUM.A,OBS_VALUE,Bulgaria,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,106.6134287
+IMF.STA:FAS(4.0.0),NGA.OUTD_COMBANK.POGDP.A,OBS_VALUE,Nigeria,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,21.89803071
+IMF.STA:FAS(4.0.0),BEL.OUTD_COMBANK.POGDP.A,OBS_VALUE,Belgium,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,102.1357693
+IMF.STA:FAS(4.0.0),BGD.OUTD_COMBANK.POGDP.A,OBS_VALUE,Bangladesh,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,39.52305967
+IMF.STA:FAS(4.0.0),NZL.OUTD_COMBANK.POGDP.A,OBS_VALUE,New Zealand,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,113.9540719
+IMF.STA:FAS(4.0.0),MEX.OUTD_COMBANK.POGDP.A,OBS_VALUE,Mexico,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,25.80196871
+IMF.STA:FAS(4.0.0),BOL.OUTD_COMBANK.POGDP.A,OBS_VALUE,Bolivia,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,56.57958272
+IMF.STA:FAS(4.0.0),SLV.OUTD_COMBANK.POGDP.A,OBS_VALUE,El Salvador,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,50.45974321
+IMF.STA:FAS(4.0.0),DNK.OUTD_COMBANK.POGDP.A,OBS_VALUE,Denmark,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,56.80428044
+IMF.STA:FAS(4.0.0),MNG.OUTD_COMBANK.POGDP.A,OBS_VALUE,Mongolia,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,51.62009945
+IMF.STA:FAS(4.0.0),LUX.OUTD_COMBANK.POGDP.A,OBS_VALUE,Luxembourg,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,89.03301521
+IMF.STA:FAS(4.0.0),BLZ.OUTD_COMBANK.POGDP.A,OBS_VALUE,Belize,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,44.46848674
+IMF.STA:FAS(4.0.0),ITA.OUTD_COMBANK.POGDP.A,OBS_VALUE,Italy,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,70.45581941
+IMF.STA:FAS(4.0.0),ESP.OUTD_COMBANK.POGDP.A,OBS_VALUE,Spain,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,85.3565992
+IMF.STA:FAS(4.0.0),LTU.OUTD_COMBANK.POGDP.A,OBS_VALUE,"Lithuania, Republic of","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,46.8940425
+IMF.STA:FAS(4.0.0),BHS.OUTD_COMBANK.POGDP.A,OBS_VALUE,"Bahamas, The","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,62.18767787
+IMF.STA:FAS(4.0.0),SGP.OUTD_COMBANK.POGDP.A,OBS_VALUE,Singapore,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,244.5847698
+IMF.STA:FAS(4.0.0),RWA.OUTD_COMBANK.POGDP.A,OBS_VALUE,Rwanda,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,23.93715743
+IMF.STA:FAS(4.0.0),NPL.OUTD_COMBANK.POGDP.A,OBS_VALUE,Nepal,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,91.33133901
+IMF.STA:FAS(4.0.0),UKR.OUTD_COMBANK.POGDP.A,OBS_VALUE,Ukraine,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,33.3886485
+IMF.STA:FAS(4.0.0),MAR.OUTD_COMBANK.POGDP.A,OBS_VALUE,Morocco,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,84.84312597
+IMF.STA:FAS(4.0.0),URY.OUTD_COMBANK.POGDP.A,OBS_VALUE,Uruguay,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,55.55971491
+IMF.STA:FAS(4.0.0),SRB.OUTD_COMBANK.POGDP.A,OBS_VALUE,"Serbia, Republic of","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,47.94184407
+IMF.STA:FAS(4.0.0),CHE.OUTD_COMBANK.POGDP.A,OBS_VALUE,Switzerland,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,171.2329175
+IMF.STA:FAS(4.0.0),TUR.OUTD_COMBANK.POGDP.A,OBS_VALUE,"Türkiye, Republic of","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,50.02561989
+IMF.STA:FAS(4.0.0),POL.OUTD_COMBANK.POGDP.A,OBS_VALUE,"Poland, Republic of","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,46.02937408
+IMF.STA:FAS(4.0.0),SVK.OUTD_COMBANK.POGDP.A,OBS_VALUE,Slovak Republic,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,52.32085186
+IMF.STA:FAS(4.0.0),SVN.OUTD_COMBANK.POGDP.A,OBS_VALUE,"Slovenia, Republic of","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,60.15589856
+IMF.STA:FAS(4.0.0),ROU.OUTD_COMBANK.POGDP.A,OBS_VALUE,Romania,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,34.53337652
+IMF.STA:FAS(4.0.0),TTO.OUTD_COMBANK.POGDP.A,OBS_VALUE,Trinidad and Tobago,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,53.2575768
+IMF.STA:FAS(4.0.0),THA.OUTD_COMBANK.POGDP.A,OBS_VALUE,Thailand,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,85.43177076
+IMF.STA:FAS(4.0.0),PHL.OUTD_COMBANK.POGDP.A,OBS_VALUE,Philippines,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,57.45801535
+IMF.STA:FAS(4.0.0),SUR.OUTD_COMBANK.POGDP.A,OBS_VALUE,Suriname,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,76.60435805
+IMF.STA:FAS(4.0.0),PRY.OUTD_COMBANK.POGDP.A,OBS_VALUE,Paraguay,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,44.83039897
+IMF.STA:FAS(4.0.0),NLD.OUTD_COMBANK.POGDP.A,OBS_VALUE,"Netherlands, The","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,89.82944598
+IMF.STA:FAS(4.0.0),PRT.OUTD_COMBANK.POGDP.A,OBS_VALUE,Portugal,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,93.87388192
+IMF.STA:FAS(4.0.0),GRC.OUTD_COMBANK.POGDP.A,OBS_VALUE,Greece,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,89.9787885
+IMF.STA:FAS(4.0.0),SWE.OUTD_COMBANK.POGDP.A,OBS_VALUE,Sweden,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,69.09843482
+IMF.STA:FAS(4.0.0),KGZ.OUTD_COMBANK.POGDP.A,OBS_VALUE,Kyrgyz Republic,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,33.20690485
+IMF.STA:FAS(4.0.0),TUN.OUTD_COMBANK.POGDP.A,OBS_VALUE,Tunisia,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,69.81419435
+IMF.STA:FAS(4.0.0),FJI.OUTD_COMBANK.POGDP.A,OBS_VALUE,"Fiji, Republic of","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,70.39156042
+IMF.STA:FAS(4.0.0),EGY.FA26N.PHTADLT_NUM.A,OBS_VALUE,"Egypt, Arab Republic of",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,6.649665446
+IMF.STA:FAS(4.0.0),ISR.OUTD_COMBANK.POGDP.A,OBS_VALUE,Israel,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,110.8686067
+IMF.STA:FAS(4.0.0),JOR.OUTD_COMBANK.POGDP.A,OBS_VALUE,Jordan,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,121.8932657
+IMF.STA:FAS(4.0.0),KHM.OUTD_COMBANK.POGDP.A,OBS_VALUE,Cambodia,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,94.49551886
+IMF.STA:FAS(4.0.0),EGY.FA18N.PHTADLT_NUM.A,OBS_VALUE,"Egypt, Arab Republic of",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,31.31056314
+IMF.STA:FAS(4.0.0),EGY.OUTD_COMBANK.POGDP.A,OBS_VALUE,"Egypt, Arab Republic of","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,109.1834712
+IMF.STA:FAS(4.0.0),ETH.OUTD_COMBANK.POGDP.A,OBS_VALUE,"Ethiopia, The Federal Democratic Republic of","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,28.19558575
+IMF.STA:FAS(4.0.0),VNM.OUTD_COMBANK.POGDP.A,OBS_VALUE,Vietnam,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,131.3749439
+IMF.STA:FAS(4.0.0),IRQ.OUTD_COMBANK.POGDP.A,OBS_VALUE,Iraq,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,34.56685318
+IMF.STA:FAS(4.0.0),CPV.OUTD_COMBANK.POGDP.A,OBS_VALUE,Cabo Verde,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,84.82121994
+IMF.STA:FAS(4.0.0),MRT.OUTD_COMBANK.POGDP.A,OBS_VALUE,"Mauritania, Islamic Republic of","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,279.3037857
+IMF.STA:FAS(4.0.0),SYC.OUTD_COMBANK.POGDP.A,OBS_VALUE,Seychelles,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,25.76610602
+IMF.STA:FAS(4.0.0),PAN.OUTD_COMBANK.POGDP.A,OBS_VALUE,Panama,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,112.7662204
+IMF.STA:FAS(4.0.0),LBN.OUTD_COMBANK.POGDP.A,OBS_VALUE,Lebanon,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,22.83568921
+IMF.STA:FAS(4.0.0),LSO.OUTD_COMBANK.POGDP.A,OBS_VALUE,"Lesotho, Kingdom of","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,41.32772647
+IMF.STA:FAS(4.0.0),MDG.OUTD_COMBANK.POGDP.A,OBS_VALUE,"Madagascar, Republic of","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,21.70501245
+IMF.STA:FAS(4.0.0),COM.OUTD_COMBANK.POGDP.A,OBS_VALUE,"Comoros, Union of the","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,11.80674631
+IMF.STA:FAS(4.0.0),BHR.OUTD_COMBANK.POGDP.A,OBS_VALUE,"Bahrain, Kingdom of","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,86.57626274
+IMF.STA:FAS(4.0.0),CHN.OUTD_COMBANK.POGDP.A,OBS_VALUE,"China, People's Republic of","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,157.6690915
+IMF.STA:FAS(4.0.0),IDN.OUTD_COMBANK.POGDP.A,OBS_VALUE,Indonesia,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,41.62445619
+IMF.STA:FAS(4.0.0),SEN.OUTD_COMBANK.POGDP.A,OBS_VALUE,Senegal,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,49.77713797
+IMF.STA:FAS(4.0.0),MLI.OUTD_COMBANK.POGDP.A,OBS_VALUE,Mali,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,38.41968994
+IMF.STA:FAS(4.0.0),NER.OUTD_COMBANK.POGDP.A,OBS_VALUE,Niger,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,15.4402431
+IMF.STA:FAS(4.0.0),BEN.OUTD_COMBANK.POGDP.A,OBS_VALUE,Benin,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,35.55953871
+IMF.STA:FAS(4.0.0),GHA.FA18N.PHTADLT_NUM.A,OBS_VALUE,Ghana,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,11.35983293
+IMF.STA:FAS(4.0.0),GHA.OUTD_COMBANK.POGDP.A,OBS_VALUE,Ghana,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,25.70465767
+IMF.STA:FAS(4.0.0),BFA.OUTD_COMBANK.POGDP.A,OBS_VALUE,Burkina Faso,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,44.28167331
+IMF.STA:FAS(4.0.0),GNB.OUTD_COMBANK.POGDP.A,OBS_VALUE,Guinea-Bissau,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,24.22070399
+IMF.STA:FAS(4.0.0),GHA.FA26N.PHTADLT_NUM.A,OBS_VALUE,Ghana,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,6.107924355
+IMF.STA:FAS(4.0.0),MOZ.OUTD_COMBANK.POGDP.A,OBS_VALUE,"Mozambique, Republic of","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,48.3689844
+IMF.STA:FAS(4.0.0),DOM.OUTD_COMBANK.POGDP.A,OBS_VALUE,Dominican Republic,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,30.60773337
+IMF.STA:FAS(4.0.0),MUS.OUTD_COMBANK.POGDP.A,OBS_VALUE,Mauritius,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,113.3890676
+IMF.STA:FAS(4.0.0),GMB.OUTD_COMBANK.POGDP.A,OBS_VALUE,"Gambia, The","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,44.61604509
+IMF.STA:FAS(4.0.0),GTM.OUTD_COMBANK.POGDP.A,OBS_VALUE,Guatemala,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,45.10091941
+IMF.STA:FAS(4.0.0),NAM.OUTD_COMBANK.POGDP.A,OBS_VALUE,Namibia,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,52.94559326
+IMF.STA:FAS(4.0.0),AGO.OUTD_COMBANK.POGDP.A,OBS_VALUE,Angola,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,20.49948443
+IMF.STA:FAS(4.0.0),DJI.OUTD_COMBANK.POGDP.A,OBS_VALUE,Djibouti,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,68.65949245
+IMF.STA:FAS(4.0.0),ZMB.OUTD_COMBANK.POGDP.A,OBS_VALUE,Zambia,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,29.76389787
+IMF.STA:FAS(4.0.0),COG.OUTD_COMBANK.POGDP.A,OBS_VALUE,"Congo, Republic of","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,25.49071927
+IMF.STA:FAS(4.0.0),TGO.OUTD_COMBANK.POGDP.A,OBS_VALUE,Togo,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,59.40093714
+IMF.STA:FAS(4.0.0),LBY.OUTD_COMBANK.POGDP.A,OBS_VALUE,Libya,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,46.77014874
+IMF.STA:FAS(4.0.0),KEN.OUTD_COMBANK.POGDP.A,OBS_VALUE,Kenya,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,37.05551184
+IMF.STA:FAS(4.0.0),DZA.OUTD_COMBANK.POGDP.A,OBS_VALUE,Algeria,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,43.07684052
+IMF.STA:FAS(4.0.0),LAO.OUTD_COMBANK.POGDP.A,OBS_VALUE,Lao People's Democratic Republic,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,82.95751268
+IMF.STA:FAS(4.0.0),GIN.OUTD_COMBANK.POGDP.A,OBS_VALUE,Guinea,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,23.14316758
+IMF.STA:FAS(4.0.0),KOR.OUTD_COMBANK.POGDP.A,OBS_VALUE,"Korea, Republic of","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,84.25979809
+IMF.STA:FAS(4.0.0),JPN.OUTD_COMBANK.POGDP.A,OBS_VALUE,Japan,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,171.3807463
+IMF.STA:FAS(4.0.0),BTN.OUTD_COMBANK.POGDP.A,OBS_VALUE,Bhutan,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,41.8418932
+IMF.STA:FAS(4.0.0),OMN.OUTD_COMBANK.POGDP.A,OBS_VALUE,Oman,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,61.32301657
+IMF.STA:FAS(4.0.0),ARE.OUTD_COMBANK.POGDP.A,OBS_VALUE,United Arab Emirates,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,120.3621526
+IMF.STA:FAS(4.0.0),ARE.FA26N.PHTADLT_NUM.A,OBS_VALUE,United Arab Emirates,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,7.660736061
+IMF.STA:FAS(4.0.0),KWT.OUTD_COMBANK.POGDP.A,OBS_VALUE,Kuwait,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,74.19428137
+IMF.STA:FAS(4.0.0),TLS.OUTD_COMBANK.POGDP.A,OBS_VALUE,"Timor-Leste, Democratic Republic of","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,53.54941273
+IMF.STA:FAS(4.0.0),AUS.OUTD_COMBANK.POGDP.A,OBS_VALUE,Australia,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,84.34907956
+IMF.STA:FAS(4.0.0),MKD.OUTD_COMBANK.POGDP.A,OBS_VALUE,"North Macedonia, Republic of","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,60.52743909
+IMF.STA:FAS(4.0.0),TJK.FA18N.PHTADLT_NUM.A,OBS_VALUE,"Tajikistan, Republic of",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,28.24879123
+IMF.STA:FAS(4.0.0),TJK.FA26N.PHTADLT_NUM.A,OBS_VALUE,"Tajikistan, Republic of",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,3.637605368
+IMF.STA:FAS(4.0.0),ARE.FA18N.PHTADLT_NUM.A,OBS_VALUE,United Arab Emirates,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,53.64939526
+IMF.STA:FAS(4.0.0),PAK.OUTD_COMBANK.POGDP.A,OBS_VALUE,Pakistan,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,28.73367058
+IMF.STA:FAS(4.0.0),TZA.OUTD_COMBANK.POGDP.A,OBS_VALUE,"Tanzania, United Republic of","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,17.76814881
+IMF.STA:FAS(4.0.0),HKG.OUTD_COMBANK.POGDP.A,OBS_VALUE,"Hong Kong Special Administrative Region, People's Republic of China","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,548.7616701
+IMF.STA:FAS(4.0.0),TJK.OUTD_COMBANK.POGDP.A,OBS_VALUE,"Tajikistan, Republic of","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,12.36956016
+IMF.STA:FAS(4.0.0),TTO.FA26N.PHTADLT_NUM.A,OBS_VALUE,Trinidad and Tobago,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,10.48492322
+IMF.STA:FAS(4.0.0),TTO.FA18N.PHTADLT_NUM.A,OBS_VALUE,Trinidad and Tobago,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,44.62813472
+IMF.STA:FAS(4.0.0),BHS.FA18N.PHTADLT_NUM.A,OBS_VALUE,"Bahamas, The",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,119.1968916
+IMF.STA:FAS(4.0.0),JAM.FA18N.PHTADLT_NUM.A,OBS_VALUE,Jamaica,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,41.16949393
+IMF.STA:FAS(4.0.0),JAM.FA26N.PHTADLT_NUM.A,OBS_VALUE,Jamaica,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,7.095168103
+IMF.STA:FAS(4.0.0),BHS.FA26N.PHTADLT_NUM.A,OBS_VALUE,"Bahamas, The",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,24.14898063
+IMF.STA:FAS(4.0.0),BRB.FA26N.PHTADLT_NUM.A,OBS_VALUE,Barbados,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,12.91566929
+IMF.STA:FAS(4.0.0),BRB.FA18N.PHTADLT_NUM.A,OBS_VALUE,Barbados,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,30.13656168
+IMF.STA:FAS(4.0.0),BRB.OUTD_COMBANK.POGDP.A,OBS_VALUE,Barbados,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,93.66425344
+IMF.STA:FAS(4.0.0),MOZ.FA18N.PHTADLT_NUM.A,OBS_VALUE,"Mozambique, Republic of",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,8.750468676
+IMF.STA:FAS(4.0.0),UKR.FA18N.PHTADLT_NUM.A,OBS_VALUE,Ukraine,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,80.87887211
+IMF.STA:FAS(4.0.0),ALB.FA18N.PHTADLT_NUM.A,OBS_VALUE,Albania,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,37.18519794
+IMF.STA:FAS(4.0.0),GUY.FA18N.PHTADLT_NUM.A,OBS_VALUE,Guyana,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,21.20503197
+IMF.STA:FAS(4.0.0),MDG.FA18N.PHTADLT_NUM.A,OBS_VALUE,"Madagascar, Republic of",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,3.070518109
+IMF.STA:FAS(4.0.0),MRT.FA18N.PHTADLT_NUM.A,OBS_VALUE,"Mauritania, Islamic Republic of",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,11.44125405
+IMF.STA:FAS(4.0.0),NAM.FA26N.PHTADLT_NUM.A,OBS_VALUE,Namibia,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,8.467906634
+IMF.STA:FAS(4.0.0),LBY.FA26N.PHTADLT_NUM.A,OBS_VALUE,Libya,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,11.61826337
+IMF.STA:FAS(4.0.0),NAM.FA18N.PHTADLT_NUM.A,OBS_VALUE,Namibia,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,68.46274841
+IMF.STA:FAS(4.0.0),FJI.FA26N.PHTADLT_NUM.A,OBS_VALUE,"Fiji, Republic of",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,10.22985583
+IMF.STA:FAS(4.0.0),NER.FA18N.PHTADLT_NUM.A,OBS_VALUE,Niger,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,2.025101964
+IMF.STA:FAS(4.0.0),SYC.FA26N.PHTADLT_NUM.A,OBS_VALUE,Seychelles,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,31.40374751
+IMF.STA:FAS(4.0.0),SEN.FA26N.PHTADLT_NUM.A,OBS_VALUE,Senegal,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,5.205386001
+IMF.STA:FAS(4.0.0),NGA.FA26N.PHTADLT_NUM.A,OBS_VALUE,Nigeria,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,3.5087404
+IMF.STA:FAS(4.0.0),LSO.FA18N.PHTADLT_NUM.A,OBS_VALUE,"Lesotho, Kingdom of",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,14.06176902
+IMF.STA:FAS(4.0.0),RWA.FA18N.PHTADLT_NUM.A,OBS_VALUE,Rwanda,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,4.110284014
+IMF.STA:FAS(4.0.0),MRT.FA26N.PHTADLT_NUM.A,OBS_VALUE,"Mauritania, Islamic Republic of",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,11.36884105
+IMF.STA:FAS(4.0.0),BFA.FA18N.PHTADLT_NUM.A,OBS_VALUE,Burkina Faso,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,4.393453038
+IMF.STA:FAS(4.0.0),MNE.FA26N.PHTADLT_NUM.A,OBS_VALUE,Montenegro,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,45.23952361
+IMF.STA:FAS(4.0.0),TZA.FA26N.PHTADLT_NUM.A,OBS_VALUE,"Tanzania, United Republic of",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,2.357880703
+IMF.STA:FAS(4.0.0),MUS.FA26N.PHTADLT_NUM.A,OBS_VALUE,Mauritius,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,14.43108268
+IMF.STA:FAS(4.0.0),SEN.FA18N.PHTADLT_NUM.A,OBS_VALUE,Senegal,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,6.797731271
+IMF.STA:FAS(4.0.0),CHL.FA18N.PHTADLT_NUM.A,OBS_VALUE,Chile,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,46.8755004
+IMF.STA:FAS(4.0.0),MAR.FA18N.PHTADLT_NUM.A,OBS_VALUE,Morocco,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,29.54945705
+IMF.STA:FAS(4.0.0),ZMB.FA18N.PHTADLT_NUM.A,OBS_VALUE,Zambia,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,7.991179531
+IMF.STA:FAS(4.0.0),ARG.FA18N.PHTADLT_NUM.A,OBS_VALUE,Argentina,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,75.31658395
+IMF.STA:FAS(4.0.0),CRI.FA18N.PHTADLT_NUM.A,OBS_VALUE,Costa Rica,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,64.5381277
+IMF.STA:FAS(4.0.0),EST.FA26N.PHTADLT_NUM.A,OBS_VALUE,"Estonia, Republic of",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,6.814876965
+IMF.STA:FAS(4.0.0),MKD.FA18N.PHTADLT_NUM.A,OBS_VALUE,"North Macedonia, Republic of",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,66.79062162
+IMF.STA:FAS(4.0.0),MUS.FA18N.PHTADLT_NUM.A,OBS_VALUE,Mauritius,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,41.79391477
+IMF.STA:FAS(4.0.0),AZE.FA26N.PHTADLT_NUM.A,OBS_VALUE,"Azerbaijan, Republic of",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,6.539220829
+IMF.STA:FAS(4.0.0),ROU.FA26N.PHTADLT_NUM.A,OBS_VALUE,Romania,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,21.51557
+IMF.STA:FAS(4.0.0),COL.FA26N.PHTADLT_NUM.A,OBS_VALUE,Colombia,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,12.77595201
+IMF.STA:FAS(4.0.0),GUY.FA26N.PHTADLT_NUM.A,OBS_VALUE,Guyana,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,7.93033716
+IMF.STA:FAS(4.0.0),ALB.FA26N.PHTADLT_NUM.A,OBS_VALUE,Albania,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,17.44007529
+IMF.STA:FAS(4.0.0),LTU.FA18N.PHTADLT_NUM.A,OBS_VALUE,"Lithuania, Republic of",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,47.14184874
+IMF.STA:FAS(4.0.0),RWA.FA26N.PHTADLT_NUM.A,OBS_VALUE,Rwanda,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,3.150822904
+IMF.STA:FAS(4.0.0),COL.FA18N.PHTADLT_NUM.A,OBS_VALUE,Colombia,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,39.16899046
+IMF.STA:FAS(4.0.0),GEO.FA18N.PHTADLT_NUM.A,OBS_VALUE,Georgia,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,99.19481972
+IMF.STA:FAS(4.0.0),LTU.FA26N.PHTADLT_NUM.A,OBS_VALUE,"Lithuania, Republic of",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,10.51753768
+IMF.STA:FAS(4.0.0),UKR.FA26N.PHTADLT_NUM.A,OBS_VALUE,Ukraine,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,15.43845793
+IMF.STA:FAS(4.0.0),ZMB.FA26N.PHTADLT_NUM.A,OBS_VALUE,Zambia,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,2.66372651
+IMF.STA:FAS(4.0.0),BRA.FA18N.PHTADLT_NUM.A,OBS_VALUE,Brazil,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,113.4541655
+IMF.STA:FAS(4.0.0),GIN.FA26N.PHTADLT_NUM.A,OBS_VALUE,Guinea,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,2.703211488
+IMF.STA:FAS(4.0.0),BFA.FA26N.PHTADLT_NUM.A,OBS_VALUE,Burkina Faso,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,2.913389072
+IMF.STA:FAS(4.0.0),GUY.OUTD_COMBANK.POGDP.A,OBS_VALUE,Guyana,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,17.68437222
+IMF.STA:FAS(4.0.0),GIN.FA18N.PHTADLT_NUM.A,OBS_VALUE,Guinea,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,2.654504975
+IMF.STA:FAS(4.0.0),AZE.FA18N.PHTADLT_NUM.A,OBS_VALUE,"Azerbaijan, Republic of",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,39.18423731
+IMF.STA:FAS(4.0.0),MAR.FA26N.PHTADLT_NUM.A,OBS_VALUE,Morocco,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,21.61427395
+IMF.STA:FAS(4.0.0),MKD.FA26N.PHTADLT_NUM.A,OBS_VALUE,"North Macedonia, Republic of",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,25.18659177
+IMF.STA:FAS(4.0.0),NZL.FA26N.PHTADLT_NUM.A,OBS_VALUE,New Zealand,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,16.90982547
+IMF.STA:FAS(4.0.0),UGA.FA18N.PHTADLT_NUM.A,OBS_VALUE,Uganda,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,3.631902265
+IMF.STA:FAS(4.0.0),GEO.FA26N.PHTADLT_NUM.A,OBS_VALUE,Georgia,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,31.31028769
+IMF.STA:FAS(4.0.0),UGA.FA26N.PHTADLT_NUM.A,OBS_VALUE,Uganda,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,2.315005624
+IMF.STA:FAS(4.0.0),MOZ.FA26N.PHTADLT_NUM.A,OBS_VALUE,"Mozambique, Republic of",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,3.738280324
+IMF.STA:FAS(4.0.0),ROU.FA18N.PHTADLT_NUM.A,OBS_VALUE,Romania,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,63.38404411
+IMF.STA:FAS(4.0.0),ARM.FA18N.PHTADLT_NUM.A,OBS_VALUE,"Armenia, Republic of",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,69.63820494
+IMF.STA:FAS(4.0.0),SRB.FA26N.PHTADLT_NUM.A,OBS_VALUE,"Serbia, Republic of",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,24.3176303
+IMF.STA:FAS(4.0.0),FJI.FA18N.PHTADLT_NUM.A,OBS_VALUE,"Fiji, Republic of",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,48.74225427
+IMF.STA:FAS(4.0.0),EST.FA18N.PHTADLT_NUM.A,OBS_VALUE,"Estonia, Republic of",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,59.20977519
+IMF.STA:FAS(4.0.0),BIH.FA26N.PHTADLT_NUM.A,OBS_VALUE,Bosnia and Herzegovina,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,29.21351876
+IMF.STA:FAS(4.0.0),MDA.FA18N.PHTADLT_NUM.A,OBS_VALUE,"Moldova, Republic of",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,57.74455512
+IMF.STA:FAS(4.0.0),AUS.FA26N.PHTADLT_NUM.A,OBS_VALUE,Australia,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,19.3178055
+IMF.STA:FAS(4.0.0),BIH.FA18N.PHTADLT_NUM.A,OBS_VALUE,Bosnia and Herzegovina,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,59.54370717
+IMF.STA:FAS(4.0.0),ARG.FA26N.PHTADLT_NUM.A,OBS_VALUE,Argentina,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,12.99702132
+IMF.STA:FAS(4.0.0),BOL.FA26N.PHTADLT_NUM.A,OBS_VALUE,Bolivia,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,74.65033715
+IMF.STA:FAS(4.0.0),MDA.FA26N.PHTADLT_NUM.A,OBS_VALUE,"Moldova, Republic of",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,29.21894299
+IMF.STA:FAS(4.0.0),SYC.FA18N.PHTADLT_NUM.A,OBS_VALUE,Seychelles,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,75.36899403
+IMF.STA:FAS(4.0.0),NZL.FA18N.PHTADLT_NUM.A,OBS_VALUE,New Zealand,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,50.87359425
+IMF.STA:FAS(4.0.0),ARM.FA26N.PHTADLT_NUM.A,OBS_VALUE,"Armenia, Republic of",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,24.16533967
+IMF.STA:FAS(4.0.0),MNE.FA18N.PHTADLT_NUM.A,OBS_VALUE,Montenegro,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,81.23444891
+IMF.STA:FAS(4.0.0),NGA.FA18N.PHTADLT_NUM.A,OBS_VALUE,Nigeria,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,14.00099359
+IMF.STA:FAS(4.0.0),MNG.FA26N.PHTADLT_NUM.A,OBS_VALUE,Mongolia,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,60.44516803
+IMF.STA:FAS(4.0.0),BOL.FA18N.PHTADLT_NUM.A,OBS_VALUE,Bolivia,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,44.94984393
+IMF.STA:FAS(4.0.0),BRA.FA26N.PHTADLT_NUM.A,OBS_VALUE,Brazil,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,16.91283301
+IMF.STA:FAS(4.0.0),CHL.FA26N.PHTADLT_NUM.A,OBS_VALUE,Chile,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,9.968350642
+IMF.STA:FAS(4.0.0),LVA.FA26N.PHTADLT_NUM.A,OBS_VALUE,"Latvia, Republic of",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,5.189633644
+IMF.STA:FAS(4.0.0),MNG.FA18N.PHTADLT_NUM.A,OBS_VALUE,Mongolia,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,41.04890808
+IMF.STA:FAS(4.0.0),LVA.FA18N.PHTADLT_NUM.A,OBS_VALUE,"Latvia, Republic of",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,56.83281722
+IMF.STA:FAS(4.0.0),SVK.FA18N.PHTADLT_NUM.A,OBS_VALUE,Slovak Republic,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,60.75290219
+IMF.STA:FAS(4.0.0),AUS.FA18N.PHTADLT_NUM.A,OBS_VALUE,Australia,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,117.6510301
+IMF.STA:FAS(4.0.0),TUN.FA26N.PHTADLT_NUM.A,OBS_VALUE,Tunisia,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,22.50804035
+IMF.STA:FAS(4.0.0),TUN.FA18N.PHTADLT_NUM.A,OBS_VALUE,Tunisia,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,33.31803927
+IMF.STA:FAS(4.0.0),SRB.FA18N.PHTADLT_NUM.A,OBS_VALUE,"Serbia, Republic of",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,53.80363303
+IMF.STA:FAS(4.0.0),SVK.FA26N.PHTADLT_NUM.A,OBS_VALUE,Slovak Republic,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,20.70374777
+IMF.STA:FAS(4.0.0),MDG.FA26N.PHTADLT_NUM.A,OBS_VALUE,"Madagascar, Republic of",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,2.841048784
+IMF.STA:FAS(4.0.0),TGO.FA26N.PHTADLT_NUM.A,OBS_VALUE,Togo,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,4.821386049
+IMF.STA:FAS(4.0.0),LBY.FA18N.PHTADLT_NUM.A,OBS_VALUE,Libya,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,16.11065854
+IMF.STA:FAS(4.0.0),CRI.FA26N.PHTADLT_NUM.A,OBS_VALUE,Costa Rica,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,16.0792977
+IMF.STA:FAS(4.0.0),MLI.FA18N.PHTADLT_NUM.A,OBS_VALUE,Mali,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,4.32193482
+IMF.STA:FAS(4.0.0),KEN.FA18N.PHTADLT_NUM.A,OBS_VALUE,Kenya,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,6.848648033
+IMF.STA:FAS(4.0.0),MLI.FA26N.PHTADLT_NUM.A,OBS_VALUE,Mali,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,3.988226105
+IMF.STA:FAS(4.0.0),LSO.FA26N.PHTADLT_NUM.A,OBS_VALUE,"Lesotho, Kingdom of",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,3.650651574
+IMF.STA:FAS(4.0.0),NER.FA26N.PHTADLT_NUM.A,OBS_VALUE,Niger,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,1.597580438
+IMF.STA:FAS(4.0.0),KEN.FA26N.PHTADLT_NUM.A,OBS_VALUE,Kenya,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,4.506237776
+IMF.STA:FAS(4.0.0),TGO.FA18N.PHTADLT_NUM.A,OBS_VALUE,Togo,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,6.919241048
+IMF.STA:FAS(4.0.0),TZA.FA18N.PHTADLT_NUM.A,OBS_VALUE,"Tanzania, United Republic of",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,5.638881177
+IMF.STA:FAS(4.0.0),PRT.FA26N.PHTADLT_NUM.A,OBS_VALUE,Portugal,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,29.73240723
+IMF.STA:FAS(4.0.0),BLZ.FA26N.PHTADLT_NUM.A,OBS_VALUE,Belize,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,14.7495155
+IMF.STA:FAS(4.0.0),IRL.FA18N.PHTADLT_NUM.A,OBS_VALUE,Ireland,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,33.20124288
+IMF.STA:FAS(4.0.0),TUR.FA18N.PHTADLT_NUM.A,OBS_VALUE,"Türkiye, Republic of",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,78.72139266
+IMF.STA:FAS(4.0.0),BEL.FA26N.PHTADLT_NUM.A,OBS_VALUE,Belgium,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,21.14978303
+IMF.STA:FAS(4.0.0),IRL.FA26N.PHTADLT_NUM.A,OBS_VALUE,Ireland,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,13.14712057
+IMF.STA:FAS(4.0.0),LUX.FA18N.PHTADLT_NUM.A,OBS_VALUE,Luxembourg,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,88.82449517
+IMF.STA:FAS(4.0.0),BTN.FA26N.PHTADLT_NUM.A,OBS_VALUE,Bhutan,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,12.97615508
+IMF.STA:FAS(4.0.0),JPN.FA26N.PHTADLT_NUM.A,OBS_VALUE,Japan,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,33.75481256
+IMF.STA:FAS(4.0.0),FIN.FA26N.PHTADLT_NUM.A,OBS_VALUE,Finland,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,5.965505367
+IMF.STA:FAS(4.0.0),DNK.FA18N.PHTADLT_NUM.A,OBS_VALUE,Denmark,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,39.12106527
+IMF.STA:FAS(4.0.0),ESP.FA18N.PHTADLT_NUM.A,OBS_VALUE,Spain,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,89.81295422
+IMF.STA:FAS(4.0.0),SWE.FA26N.PHTADLT_NUM.A,OBS_VALUE,Sweden,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,10.58604385
+IMF.STA:FAS(4.0.0),CHE.FA18N.PHTADLT_NUM.A,OBS_VALUE,Switzerland,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,89.49144284
+IMF.STA:FAS(4.0.0),KAZ.OUTD_COMBANK.POGDP.A,OBS_VALUE,"Kazakhstan, Republic of","Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,26.78190073
+IMF.STA:FAS(4.0.0),KAZ.FA18N.PHTADLT_NUM.A,OBS_VALUE,"Kazakhstan, Republic of",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,87.88535398
+IMF.STA:FAS(4.0.0),DNK.FA26N.PHTADLT_NUM.A,OBS_VALUE,Denmark,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,17.53285494
+IMF.STA:FAS(4.0.0),AGO.FA18N.PHTADLT_NUM.A,OBS_VALUE,Angola,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,16.22510077
+IMF.STA:FAS(4.0.0),ISL.FA26N.PHTADLT_NUM.A,OBS_VALUE,Iceland,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,25.33699811
+IMF.STA:FAS(4.0.0),GRC.FA26N.PHTADLT_NUM.A,OBS_VALUE,Greece,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,16.33754866
+IMF.STA:FAS(4.0.0),CHE.FA26N.PHTADLT_NUM.A,OBS_VALUE,Switzerland,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,35.05338632
+IMF.STA:FAS(4.0.0),OMN.FA26N.PHTADLT_NUM.A,OBS_VALUE,Oman,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,15.96025124
+IMF.STA:FAS(4.0.0),KAZ.FA26N.PHTADLT_NUM.A,OBS_VALUE,"Kazakhstan, Republic of",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,12.18521815
+IMF.STA:FAS(4.0.0),CAN.FA18N.PHTADLT_NUM.A,OBS_VALUE,Canada,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,205.9685036
+IMF.STA:FAS(4.0.0),BGD.FA26N.PHTADLT_NUM.A,OBS_VALUE,Bangladesh,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,9.282841483
+IMF.STA:FAS(4.0.0),AUT.FA18N.PHTADLT_NUM.A,OBS_VALUE,Austria,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,176.3271959
+IMF.STA:FAS(4.0.0),MLT.FA18N.PHTADLT_NUM.A,OBS_VALUE,Malta,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,42.52134203
+IMF.STA:FAS(4.0.0),KGZ.FA18N.PHTADLT_NUM.A,OBS_VALUE,Kyrgyz Republic,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,43.62199797
+IMF.STA:FAS(4.0.0),MLT.FA26N.PHTADLT_NUM.A,OBS_VALUE,Malta,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,22.1284535
+IMF.STA:FAS(4.0.0),NLD.FA26N.PHTADLT_NUM.A,OBS_VALUE,"Netherlands, The",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,5.17895941
+IMF.STA:FAS(4.0.0),BTN.FA18N.PHTADLT_NUM.A,OBS_VALUE,Bhutan,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,44.18462933
+IMF.STA:FAS(4.0.0),FIN.FA18N.PHTADLT_NUM.A,OBS_VALUE,Finland,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,36.00532777
+IMF.STA:FAS(4.0.0),BGD.FA18N.PHTADLT_NUM.A,OBS_VALUE,Bangladesh,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,13.19738258
+IMF.STA:FAS(4.0.0),KGZ.FA26N.PHTADLT_NUM.A,OBS_VALUE,Kyrgyz Republic,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,7.288143708
+IMF.STA:FAS(4.0.0),AUT.FA26N.PHTADLT_NUM.A,OBS_VALUE,Austria,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,11.45300401
+IMF.STA:FAS(4.0.0),BLZ.FA18N.PHTADLT_NUM.A,OBS_VALUE,Belize,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,45.27758245
+IMF.STA:FAS(4.0.0),NLD.FA18N.PHTADLT_NUM.A,OBS_VALUE,"Netherlands, The",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,34.15043209
+IMF.STA:FAS(4.0.0),TUR.FA26N.PHTADLT_NUM.A,OBS_VALUE,"Türkiye, Republic of",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,14.44276603
+IMF.STA:FAS(4.0.0),ISL.FA18N.PHTADLT_NUM.A,OBS_VALUE,Iceland,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,68.31367845
+IMF.STA:FAS(4.0.0),CHN.FA26N.PHTADLT_NUM.A,OBS_VALUE,"China, People's Republic of",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,8.784714039
+IMF.STA:FAS(4.0.0),CAN.FA26N.PHTADLT_NUM.A,OBS_VALUE,Canada,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,19.76144427
+IMF.STA:FAS(4.0.0),PRT.FA18N.PHTADLT_NUM.A,OBS_VALUE,Portugal,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,159.3366203
+IMF.STA:FAS(4.0.0),AGO.FA26N.PHTADLT_NUM.A,OBS_VALUE,Angola,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,7.538525217
+IMF.STA:FAS(4.0.0),FRA.FA18N.PHTADLT_NUM.A,OBS_VALUE,France,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,84.28869373
+IMF.STA:FAS(4.0.0),OMN.FA18N.PHTADLT_NUM.A,OBS_VALUE,Oman,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,51.89230699
+IMF.STA:FAS(4.0.0),GRC.FA18N.PHTADLT_NUM.A,OBS_VALUE,Greece,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,66.47347061
+IMF.STA:FAS(4.0.0),JPN.FA18N.PHTADLT_NUM.A,OBS_VALUE,Japan,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,113.0691467
+IMF.STA:FAS(4.0.0),FRA.FA26N.PHTADLT_NUM.A,OBS_VALUE,France,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,32.03855747
+IMF.STA:FAS(4.0.0),SWE.FA18N.PHTADLT_NUM.A,OBS_VALUE,Sweden,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,24.59290536
+IMF.STA:FAS(4.0.0),ESP.FA26N.PHTADLT_NUM.A,OBS_VALUE,Spain,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,33.48579956
+IMF.STA:FAS(4.0.0),CHN.FA18N.PHTADLT_NUM.A,OBS_VALUE,"China, People's Republic of",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,76.55598676
+IMF.STA:FAS(4.0.0),LUX.FA26N.PHTADLT_NUM.A,OBS_VALUE,Luxembourg,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,52.42101355
+IMF.STA:FAS(4.0.0),BEL.FA18N.PHTADLT_NUM.A,OBS_VALUE,Belgium,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,60.4645834
+IMF.STA:FAS(4.0.0),GNB.FA18N.PHTADLT_NUM.A,OBS_VALUE,Guinea-Bissau,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,7.404291653
+IMF.STA:FAS(4.0.0),ETH.FA18N.PHTADLT_NUM.A,OBS_VALUE,"Ethiopia, The Federal Democratic Republic of",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,9.129696291
+IMF.STA:FAS(4.0.0),CPV.FA26N.PHTADLT_NUM.A,OBS_VALUE,Cabo Verde,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,35.13833407
+IMF.STA:FAS(4.0.0),DZA.FA18N.PHTADLT_NUM.A,OBS_VALUE,Algeria,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,11.57333072
+IMF.STA:FAS(4.0.0),COG.FA26N.PHTADLT_NUM.A,OBS_VALUE,"Congo, Republic of",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,3.9207545
+IMF.STA:FAS(4.0.0),ETH.FA26N.PHTADLT_NUM.A,OBS_VALUE,"Ethiopia, The Federal Democratic Republic of",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,11.87045704
+IMF.STA:FAS(4.0.0),COM.FA18N.PHTADLT_NUM.A,OBS_VALUE,"Comoros, Union of the",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,6.544200299
+IMF.STA:FAS(4.0.0),CPV.FA18N.PHTADLT_NUM.A,OBS_VALUE,Cabo Verde,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,56.00997612
+IMF.STA:FAS(4.0.0),BEN.FA26N.PHTADLT_NUM.A,OBS_VALUE,Benin,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,2.800131393
+IMF.STA:FAS(4.0.0),BWA.FA26N.PHTADLT_NUM.A,OBS_VALUE,Botswana,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,8.309073265
+IMF.STA:FAS(4.0.0),COG.FA18N.PHTADLT_NUM.A,OBS_VALUE,"Congo, Republic of",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,13.48288238
+IMF.STA:FAS(4.0.0),ZAF.FA18N.PHTADLT_NUM.A,OBS_VALUE,South Africa,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,46.91286335
+IMF.STA:FAS(4.0.0),COM.FA26N.PHTADLT_NUM.A,OBS_VALUE,"Comoros, Union of the",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,5.004388464
+IMF.STA:FAS(4.0.0),GMB.FA26N.PHTADLT_NUM.A,OBS_VALUE,"Gambia, The",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,5.803995212
+IMF.STA:FAS(4.0.0),BEN.FA18N.PHTADLT_NUM.A,OBS_VALUE,Benin,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,3.82977612
+IMF.STA:FAS(4.0.0),GNB.FA26N.PHTADLT_NUM.A,OBS_VALUE,Guinea-Bissau,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,3.308300526
+IMF.STA:FAS(4.0.0),ZAF.FA26N.PHTADLT_NUM.A,OBS_VALUE,South Africa,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,8.476996226
+IMF.STA:FAS(4.0.0),DZA.FA26N.PHTADLT_NUM.A,OBS_VALUE,Algeria,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,4.947280935
+IMF.STA:FAS(4.0.0),BWA.FA18N.PHTADLT_NUM.A,OBS_VALUE,Botswana,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,38.14895682
+IMF.STA:FAS(4.0.0),ZAF.OUTD_COMBANK.POGDP.A,OBS_VALUE,South Africa,"Outstanding deposits, Commercial banks",Percent of GDP,Annual,Units,46.09801514
+IMF.STA:FAS(4.0.0),GMB.FA18N.PHTADLT_NUM.A,OBS_VALUE,"Gambia, The",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,8.512526311
+IMF.STA:FAS(4.0.0),TLS.FA18N.PHTADLT_NUM.A,OBS_VALUE,"Timor-Leste, Democratic Republic of",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,15.46547724
+IMF.STA:FAS(4.0.0),URY.FA18N.PHTADLT_NUM.A,OBS_VALUE,Uruguay,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,304.149729
+IMF.STA:FAS(4.0.0),ITA.FA18N.PHTADLT_NUM.A,OBS_VALUE,Italy,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,90.32531892
+IMF.STA:FAS(4.0.0),IRQ.FA26N.PHTADLT_NUM.A,OBS_VALUE,Iraq,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,3.439283128
+IMF.STA:FAS(4.0.0),PER.FA18N.PHTADLT_NUM.A,OBS_VALUE,Peru,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,121.5158012
+IMF.STA:FAS(4.0.0),HKG.FA18N.PHTADLT_NUM.A,OBS_VALUE,"Hong Kong Special Administrative Region, People's Republic of China",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,48.89560864
+IMF.STA:FAS(4.0.0),SVN.FA26N.PHTADLT_NUM.A,OBS_VALUE,"Slovenia, Republic of",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,21.41383747
+IMF.STA:FAS(4.0.0),HND.FA26N.PHTADLT_NUM.A,OBS_VALUE,Honduras,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,15.53002225
+IMF.STA:FAS(4.0.0),HUN.FA26N.PHTADLT_NUM.A,OBS_VALUE,Hungary,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,17.52060529
+IMF.STA:FAS(4.0.0),POL.FA26N.PHTADLT_NUM.A,OBS_VALUE,"Poland, Republic of",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,22.6368324
+IMF.STA:FAS(4.0.0),DJI.FA26N.PHTADLT_NUM.A,OBS_VALUE,Djibouti,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,9.174288867
+IMF.STA:FAS(4.0.0),NPL.FA26N.PHTADLT_NUM.A,OBS_VALUE,Nepal,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,23.72066574
+IMF.STA:FAS(4.0.0),HRV.FA26N.PHTADLT_NUM.A,OBS_VALUE,"Croatia, Republic of",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,26.29947077
+IMF.STA:FAS(4.0.0),ISR.FA26N.PHTADLT_NUM.A,OBS_VALUE,Israel,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,14.43441233
+IMF.STA:FAS(4.0.0),IND.FA18N.PHTADLT_NUM.A,OBS_VALUE,India,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,24.56163942
+IMF.STA:FAS(4.0.0),SUR.FA18N.PHTADLT_NUM.A,OBS_VALUE,Suriname,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,27.85321356
+IMF.STA:FAS(4.0.0),DEU.FA26N.PHTADLT_NUM.A,OBS_VALUE,Germany,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,7.022498388
+IMF.STA:FAS(4.0.0),HKG.FA26N.PHTADLT_NUM.A,OBS_VALUE,"Hong Kong Special Administrative Region, People's Republic of China",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,18.74840994
+IMF.STA:FAS(4.0.0),HND.FA18N.PHTADLT_NUM.A,OBS_VALUE,Honduras,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,25.43302298
+IMF.STA:FAS(4.0.0),PER.FA26N.PHTADLT_NUM.A,OBS_VALUE,Peru,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,5.181614188
+IMF.STA:FAS(4.0.0),ECU.FA26N.PHTADLT_NUM.A,OBS_VALUE,Ecuador,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,8.993795411
+IMF.STA:FAS(4.0.0),ISR.FA18N.PHTADLT_NUM.A,OBS_VALUE,Israel,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,128.2575795
+IMF.STA:FAS(4.0.0),LBN.FA26N.PHTADLT_NUM.A,OBS_VALUE,Lebanon,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,19.79521988
+IMF.STA:FAS(4.0.0),KOR.FA18N.PHTADLT_NUM.A,OBS_VALUE,"Korea, Republic of",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,252.633954
+IMF.STA:FAS(4.0.0),ECU.FA18N.PHTADLT_NUM.A,OBS_VALUE,Ecuador,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,50.75393089
+IMF.STA:FAS(4.0.0),IDN.FA26N.PHTADLT_NUM.A,OBS_VALUE,Indonesia,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,12.23034966
+IMF.STA:FAS(4.0.0),KWT.FA18N.PHTADLT_NUM.A,OBS_VALUE,Kuwait,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,62.54547965
+IMF.STA:FAS(4.0.0),MEX.FA18N.PHTADLT_NUM.A,OBS_VALUE,Mexico,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,66.46093294
+IMF.STA:FAS(4.0.0),KHM.FA26N.PHTADLT_NUM.A,OBS_VALUE,Cambodia,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,12.50518367
+IMF.STA:FAS(4.0.0),NIC.FA26N.PHTADLT_NUM.A,OBS_VALUE,Nicaragua,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,8.024968634
+IMF.STA:FAS(4.0.0),MYS.FA26N.PHTADLT_NUM.A,OBS_VALUE,Malaysia,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,8.045347373
+IMF.STA:FAS(4.0.0),SVN.FA18N.PHTADLT_NUM.A,OBS_VALUE,"Slovenia, Republic of",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,71.15639741
+IMF.STA:FAS(4.0.0),HUN.FA18N.PHTADLT_NUM.A,OBS_VALUE,Hungary,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,57.72783579
+IMF.STA:FAS(4.0.0),DOM.FA26N.PHTADLT_NUM.A,OBS_VALUE,Dominican Republic,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,10.84766226
+IMF.STA:FAS(4.0.0),IND.FA26N.PHTADLT_NUM.A,OBS_VALUE,India,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,14.26709129
+IMF.STA:FAS(4.0.0),JOR.FA18N.PHTADLT_NUM.A,OBS_VALUE,Jordan,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,29.27987796
+IMF.STA:FAS(4.0.0),SUR.FA26N.PHTADLT_NUM.A,OBS_VALUE,Suriname,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,10.44495509
+IMF.STA:FAS(4.0.0),KHM.FA18N.PHTADLT_NUM.A,OBS_VALUE,Cambodia,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,37.8164779
+IMF.STA:FAS(4.0.0),HRV.FA18N.PHTADLT_NUM.A,OBS_VALUE,"Croatia, Republic of",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,126.6248397
+IMF.STA:FAS(4.0.0),URY.FA26N.PHTADLT_NUM.A,OBS_VALUE,Uruguay,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,9.656125336
+IMF.STA:FAS(4.0.0),DOM.FA18N.PHTADLT_NUM.A,OBS_VALUE,Dominican Republic,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,38.53549466
+IMF.STA:FAS(4.0.0),SLV.FA26N.PHTADLT_NUM.A,OBS_VALUE,El Salvador,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,9.204779807
+IMF.STA:FAS(4.0.0),JOR.FA26N.PHTADLT_NUM.A,OBS_VALUE,Jordan,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,12.54106972
+IMF.STA:FAS(4.0.0),CYP.FA26N.PHTADLT_NUM.A,OBS_VALUE,Cyprus,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,20.57414385
+IMF.STA:FAS(4.0.0),THA.FA26N.PHTADLT_NUM.A,OBS_VALUE,Thailand,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,8.695374094
+IMF.STA:FAS(4.0.0),PAN.FA26N.PHTADLT_NUM.A,OBS_VALUE,Panama,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,19.04562175
+IMF.STA:FAS(4.0.0),LAO.FA18N.PHTADLT_NUM.A,OBS_VALUE,Lao People's Democratic Republic,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,27.46076405
+IMF.STA:FAS(4.0.0),KWT.FA26N.PHTADLT_NUM.A,OBS_VALUE,Kuwait,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,11.38171299
+IMF.STA:FAS(4.0.0),PAN.FA18N.PHTADLT_NUM.A,OBS_VALUE,Panama,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,72.17770941
+IMF.STA:FAS(4.0.0),DEU.FA18N.PHTADLT_NUM.A,OBS_VALUE,Germany,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,72.98629789
+IMF.STA:FAS(4.0.0),NIC.FA18N.PHTADLT_NUM.A,OBS_VALUE,Nicaragua,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,21.79412534
+IMF.STA:FAS(4.0.0),MEX.FA26N.PHTADLT_NUM.A,OBS_VALUE,Mexico,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,12.38191686
+IMF.STA:FAS(4.0.0),LAO.FA26N.PHTADLT_NUM.A,OBS_VALUE,Lao People's Democratic Republic,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,2.968213687
+IMF.STA:FAS(4.0.0),ITA.FA26N.PHTADLT_NUM.A,OBS_VALUE,Italy,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,33.07415318
+IMF.STA:FAS(4.0.0),NPL.FA18N.PHTADLT_NUM.A,OBS_VALUE,Nepal,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,21.79327286
+IMF.STA:FAS(4.0.0),SAU.FA18N.PHTADLT_NUM.A,OBS_VALUE,Saudi Arabia,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,67.02606374
+IMF.STA:FAS(4.0.0),PAK.FA18N.PHTADLT_NUM.A,OBS_VALUE,Pakistan,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,11.48540665
+IMF.STA:FAS(4.0.0),SGP.FA26N.PHTADLT_NUM.A,OBS_VALUE,Singapore,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,6.431087271
+IMF.STA:FAS(4.0.0),VNM.FA26N.PHTADLT_NUM.A,OBS_VALUE,Vietnam,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,3.026817684
+IMF.STA:FAS(4.0.0),GTM.FA26N.PHTADLT_NUM.A,OBS_VALUE,Guatemala,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,22.75770983
+IMF.STA:FAS(4.0.0),PRY.FA26N.PHTADLT_NUM.A,OBS_VALUE,Paraguay,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,9.906547541
+IMF.STA:FAS(4.0.0),SAU.FA26N.PHTADLT_NUM.A,OBS_VALUE,Saudi Arabia,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,8.059130426
+IMF.STA:FAS(4.0.0),SGP.FA18N.PHTADLT_NUM.A,OBS_VALUE,Singapore,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,51.0858155
+IMF.STA:FAS(4.0.0),TLS.FA26N.PHTADLT_NUM.A,OBS_VALUE,"Timor-Leste, Democratic Republic of",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,5.379296433
+IMF.STA:FAS(4.0.0),PAK.FA26N.PHTADLT_NUM.A,OBS_VALUE,Pakistan,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,10.54154409
+IMF.STA:FAS(4.0.0),SLV.FA18N.PHTADLT_NUM.A,OBS_VALUE,El Salvador,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,38.38179115
+IMF.STA:FAS(4.0.0),DJI.FA18N.PHTADLT_NUM.A,OBS_VALUE,Djibouti,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,15.20669798
+IMF.STA:FAS(4.0.0),THA.FA18N.PHTADLT_NUM.A,OBS_VALUE,Thailand,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,99.73388034
+IMF.STA:FAS(4.0.0),IRQ.FA18N.PHTADLT_NUM.A,OBS_VALUE,Iraq,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,8.081951791
+IMF.STA:FAS(4.0.0),MYS.FA18N.PHTADLT_NUM.A,OBS_VALUE,Malaysia,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,50.66626607
+IMF.STA:FAS(4.0.0),PHL.FA26N.PHTADLT_NUM.A,OBS_VALUE,Philippines,Number of commercial bank branches,"Per 100,000 adults",Annual,Units,8.931248976
+IMF.STA:FAS(4.0.0),PRY.FA18N.PHTADLT_NUM.A,OBS_VALUE,Paraguay,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,28.36685777
+IMF.STA:FAS(4.0.0),VNM.FA18N.PHTADLT_NUM.A,OBS_VALUE,Vietnam,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,27.74648821
+IMF.STA:FAS(4.0.0),IDN.FA18N.PHTADLT_NUM.A,OBS_VALUE,Indonesia,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,47.31503438
+IMF.STA:FAS(4.0.0),PHL.FA18N.PHTADLT_NUM.A,OBS_VALUE,Philippines,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,29.08212339
+IMF.STA:FAS(4.0.0),BHR.FA18N.PHTADLT_NUM.A,OBS_VALUE,"Bahrain, Kingdom of",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,38.58009057
+IMF.STA:FAS(4.0.0),BHR.FA26N.PHTADLT_NUM.A,OBS_VALUE,"Bahrain, Kingdom of",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,14.42700866
+IMF.STA:FAS(4.0.0),CYP.FA18N.PHTADLT_NUM.A,OBS_VALUE,Cyprus,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,30.50340457
+IMF.STA:FAS(4.0.0),POL.FA18N.PHTADLT_NUM.A,OBS_VALUE,"Poland, Republic of",Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,68.3466844
+IMF.STA:FAS(4.0.0),GTM.FA18N.PHTADLT_NUM.A,OBS_VALUE,Guatemala,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,35.66457051
+IMF.STA:FAS(4.0.0),LBN.FA18N.PHTADLT_NUM.A,OBS_VALUE,Lebanon,Number of automated teller machines (ATMs),"Per 100,000 adults",Annual,Units,36.21951464
+IMF.STA:FAS(4.0.0),KOR.FA26N.PHTADLT_NUM.A,OBS_VALUE,"Korea, Republic of",Number of commercial bank branches,"Per 100,000 adults",Annual,Units,12.89363377
