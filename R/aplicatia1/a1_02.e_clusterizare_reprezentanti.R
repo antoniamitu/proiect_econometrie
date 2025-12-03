@@ -64,16 +64,34 @@ clusters <- cutree(hc, k = k)
 
 # 5. Alegerea reprezentantului pe baza corelatiei cu Y ------------------------
 
-# Corelatia Y cu fiecare X
-cor_YX <- cor(df$Y, vars_X, use = "complete.obs")
+# Ne asiguram ca Y si X-urile sunt numerice
+df$Y  <- as.numeric(df$Y)
+df$X1 <- as.numeric(df$X1)
+df$X2 <- as.numeric(df$X2)
+df$X3 <- as.numeric(df$X3)
+df$X4 <- as.numeric(df$X4)
+df$X5 <- as.numeric(df$X5)
 
+# Selectam doar variabilele X numerice pentru corelatie
+vars_X_df <- df %>% select(X1, X2, X3, X4, X5)
+# alternativ, daca ai deja vars_X <- df %>% select(X1:X5), poti scrie:
+# vars_X_df <- vars_X
+
+# Calculam corelatia dintre Y si fiecare X (matrice 1 x k)
+cor_matrix_YX <- cor(df$Y, vars_X_df, use = "complete.obs")
+
+# Convertim matricea intr-un vector numit (X1, X2, ...)
+cor_vector <- as.numeric(cor_matrix_YX)
+names(cor_vector) <- colnames(cor_matrix_YX)
+
+# Tabel final cu info despre clustere
 info_clusters <- tibble(
   Variabila = names(clusters),
   Cluster   = as.integer(clusters),
-  Corr_Y    = as.numeric(cor_YX[names(clusters)])
+  Corr_Y    = cor_vector[names(clusters)]
 )
 
-# Pentru fiecare cluster alegem variabila cu |corr(Y,X)| maxim
+# Reprezentantul = variabila cu |corr(Y,X)| maxim in fiecare cluster
 reprezentanti <- info_clusters %>%
   group_by(Cluster) %>%
   slice_max(order_by = abs(Corr_Y), n = 1, with_ties = FALSE) %>%
@@ -90,14 +108,3 @@ write.csv(info_clusters,
           "output/tests/a1_02e_info_clustere.csv", row.names = FALSE)
 write.csv(reprezentanti,
           "output/tests/a1_02e_reprezentanti.csv", row.names = FALSE)
-
-# 6. Crearea unui dataset cu reprezentantii selectati -------------------------
-# Acest fisier poate fi folosit ulterior in regresii / comparatii de modele
-rep_vars <- reprezentanti$Variabila
-
-df_reps <- df %>%
-  select(iso_code, country, Y, D, all_of(rep_vars))
-
-write.csv(df_reps,
-          "data/processed/train_data_cluster_reps.csv",
-          row.names = FALSE)
