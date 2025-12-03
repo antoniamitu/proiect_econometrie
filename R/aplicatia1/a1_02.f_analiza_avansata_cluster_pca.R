@@ -151,3 +151,31 @@ write.csv(profil,
 
 # Salvarea setului complet de date, inclusiv coloana 'Cluster'
 write.csv(df_final_cluster, "data/processed/full_data_clusters.csv", row.names = FALSE)
+
+# ==============================================================================
+# 8. Generarea seturilor TRAIN si TEST cu Clustere (CORECAT)
+# ==============================================================================
+
+# Citim ID-urile originale pentru a sti care tari sunt in Train si care in Test
+if(file.exists("data/processed/train_data_raw.csv") & file.exists("data/processed/test_data_raw.csv")) {
+  
+  train_ids <- read.csv("data/processed/train_data_raw.csv") %>% pull(iso_code)
+  test_ids  <- read.csv("data/processed/test_data_raw.csv") %>% pull(iso_code)
+  
+  # Setul Train cu Clustere
+  # ATENTIE: df_final_cluster are deja iso_code corect din citirea initiala
+  train_data_clusters <- df_final_cluster %>% 
+    filter(iso_code %in% train_ids) %>%
+    select(iso_code, country, Y, X1, X2, X3, X4, X5, Cluster)
+  
+  # Setul Test cu Clustere
+  test_data_clusters <- df_final_cluster %>% 
+    filter(iso_code %in% test_ids) %>%
+    select(iso_code, country, Y, X1, X2, X3, X4, X5, Cluster)
+  
+  # Salvare
+  write.csv(train_data_clusters, "data/processed/train_data_clusters.csv", row.names = FALSE)
+  write.csv(test_data_clusters,  "data/processed/test_data_clusters.csv", row.names = FALSE)
+} else {
+  warning("Nu am gasit fisierele raw (train/test) pentru a face impartirea.")
+}
