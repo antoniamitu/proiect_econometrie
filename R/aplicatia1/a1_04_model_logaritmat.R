@@ -131,3 +131,6 @@ dev.off()
 png("output/figures/a1_04_residuals_fitted_log.png", width = 800, height = 600)
 plot(model_log, which = 1, main = "Residuals vs Fitted (Model Log)")
 dev.off()
+
+# Salvarea datelor de antrenament logaritmate pentru Studentul 3 (ML)
+write.csv(df_log, "data/processed/train_data_log.csv", row.names = FALSE)

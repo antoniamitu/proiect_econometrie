@@ -148,3 +148,6 @@ print(profil)
 write.csv(profil,
           "output/advanced_analysis/a1_02f_profil_clustere.csv",
           row.names = FALSE)
+
+# Salvarea setului complet de date, inclusiv coloana 'Cluster'
+write.csv(df_final_cluster, "data/processed/full_data_clusters.csv", row.names = FALSE)

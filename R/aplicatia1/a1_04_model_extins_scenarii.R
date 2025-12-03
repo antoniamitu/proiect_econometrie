@@ -134,3 +134,6 @@ if (nrow(romania_data) > 0) {
     cat("Concluzie: Romania performeaza PESTE potentialul indicat de model.\n")
   }
 }
+
+# Salvarea setului complet de date logaritmate
+write.csv(df_final, "data/processed/full_data_log.csv", row.names = FALSE)
