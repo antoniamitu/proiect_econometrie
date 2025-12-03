@@ -134,3 +134,15 @@ dev.off()
 
 # Salvarea datelor de antrenament logaritmate pentru Studentul 3 (ML)
 write.csv(df_log, "data/processed/train_data_log.csv", row.names = FALSE)
+
+# Cream varianta log și pentru test
+df_test <- read.csv("data/processed/test_data_raw.csv") %>%
+  mutate(
+    l_Y  = log(Y),
+    l_X1 = log(X1),
+    l_X2 = log(X2),
+    l_X5 = log(X5),
+    D    = as.factor(D)
+  )
+
+write.csv(df_test, "data/processed/test_data_log.csv", row.names = FALSE)
