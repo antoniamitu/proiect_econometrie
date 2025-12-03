@@ -33,7 +33,7 @@ if (!dir.exists("output/tests")) dir.create("output/tests", recursive = TRUE)
 
 # 2. Importarea Datelor de Antrenare ------------------------------------------
 # Lucram DOAR pe setul de antrenare pentru a nu "spiona" setul de testare
-df <- read.csv("data/processed/train_data_no_outliers.csv")
+df <- read.csv("data/processed/train_data_raw.csv")
 
 # Ne asiguram ca variabila Dummy este factor
 df$D <- as.factor(df$D)

@@ -1,0 +1,47 @@
+=== DIAGNOSTIC MODEL DATE BRUTE ===
+
+1. NORMALITATE REZIDUURI
+Jarque-Bera:
+
+	Jarque Bera Test
+
+data:  resid_raw
+X-squared = 3930.9, df = 2, p-value < 2.2e-16
+
+
+Shapiro-Wilk:
+
+	Shapiro-Wilk normality test
+
+data:  resid_raw
+W = 0.64282, p-value = 4.783e-15
+
+
+2. HOMOSCEDASTICITATE
+Breusch-Pagan (clasic):
+
+	studentized Breusch-Pagan test
+
+data:  model_raw
+BP = 8.3162, df = 6, p-value = 0.2158
+
+
+White-style (bptest cu fitted + fitted^2):
+
+	studentized Breusch-Pagan test
+
+data:  model_raw
+BP = 6.9069, df = 2, p-value = 0.03164
+
+
+3. MULTICOLINIARITATE (VIF):
+      X1       X2       X3       X4       X5        D 
+1.294664 1.242902 4.461725 2.537767 2.779217 2.172716 
+
+4. FORMA FUNCTIONALA (RESET test):
+
+	RESET test
+
+data:  model_raw
+RESET = 2.7074, df1 = 2, df2 = 102, p-value = 0.07151
+

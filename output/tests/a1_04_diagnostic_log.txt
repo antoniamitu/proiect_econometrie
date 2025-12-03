@@ -1,0 +1,29 @@
+=== DIAGNOSTIC MODEL LOGARITMAT (ITERATIA 2) ===
+
+1. NORMALITATE (Jarque-Bera):
+
+	Jarque Bera Test
+
+data:  resid_log
+X-squared = 7.1049, df = 2, p-value = 0.02865
+
+
+2. HOMOSCEDASTICITATE (Breusch-Pagan):
+
+	studentized Breusch-Pagan test
+
+data:  model_log
+BP = 2.9924, df = 6, p-value = 0.8098
+
+
+3. MULTICOLINIARITATE (VIF):
+    l_X1     l_X2       X3       X4     l_X5        D 
+1.976660 1.601970 4.248122 2.529040 5.010280 2.192326 
+
+4. FORMA FUNCTIONALA (RESET):
+
+	RESET test
+
+data:  model_log
+RESET = 2.1068, df1 = 2, df2 = 102, p-value = 0.1269
+
