@@ -1,0 +1,4 @@
+test,statistic,df,p_value
+BP heteroscedasticity (bptest),89.06937219122779,6,4.7281983001828936e-17
+Panel autocorrelation (pbgtest),550.1919192693,5,1.1622478402635174e-116
+"Cross-sectional dependence (pcdtest, Pesaran CD)",59.67258091834735,,0

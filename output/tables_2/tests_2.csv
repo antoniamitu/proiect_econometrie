@@ -1,0 +1,4 @@
+test,statistic,df,p_value
+F-test (pooled vs FE),132.30672038100522,"122, 1207",0
+LM BP (pooled vs RE),5466.970731775518,1,0
+Hausman (FE vs RE),28.132817553780807,6,8.870228403998829e-5
