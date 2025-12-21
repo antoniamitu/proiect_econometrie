@@ -1,38 +1,26 @@
----
-title: "Analiză Econometrică: Machine Learning (Local Data)"
-author: "Proiect Econometrie"
-date: "`r Sys.Date()`"
-output: 
-  html_document:
-    theme: cerulean
-    toc: true
-    toc_float: true
-    highlight: tango
-    code_folding: show
----
+# =========================
+# ML pipeline
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, fig.align = "center")
-# Funcție pentru verificarea și instalarea pachetelor lipsă
-install_load <- function(pkg){
-  new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
-  if (length(new.pkg)) 
-    install.packages(new.pkg, dependencies = TRUE)
-  sapply(pkg, require, character.only = TRUE)
+# =========================
+
+# ---------- Packages ----------
+install_load <- function(pkgs) {
+  new_pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
+  if (length(new_pkgs)) install.packages(new_pkgs, dependencies = TRUE)
+  invisible(sapply(pkgs, require, character.only = TRUE))
 }
 
-# Lista pachetelor necesare
-packages <- c("tidyverse", "caret", "glmnet", "randomForest", "gbm", 
-              "e1071", "cluster", "factoextra", "kableExtra", "gridExtra")
-
+packages <- c(
+  "tidyverse", "caret", "glmnet", "randomForest", "gbm",
+  "e1071", "cluster", "kernlab", "ggplot2"
+)
 install_load(packages)
 
-# Setăm seed-ul pentru reproductibilitate
 set.seed(42)
-# CONFIGURARE CALE:
-DATA_DIR <- "data" 
 
-# Lista numelor de fișiere
+# ---------- Config ----------
+DATA_DIR <- file.path("data", "processed")
+
 files_list <- list(
   raw_train   = "train_data_raw.csv",
   raw_test    = "test_data_raw.csv",
@@ -40,237 +28,326 @@ files_list <- list(
   log_test    = "test_data_log.csv",
   pca_train   = "train_data_pca.csv",
   pca_test    = "test_data_pca.csv",
-  clust_train = "train_data_clusters.csv",
-  clust_test  = "test_data_clusters.csv"
+  clust_train = "train_data_clusters.csv",  
+  clust_test  = "test_data_clusters.csv"    
 )
 
-# Funcție de citire sigură (caută și în folderul curent dacă nu găsește în subfolder)
 read_local_data <- function(filename, path) {
   full_path <- file.path(path, filename)
-  
   if (file.exists(full_path)) {
-    return(read_csv(full_path, show_col_types = FALSE))
+    return(readr::read_csv(full_path, show_col_types = FALSE))
   } else if (file.exists(filename)) {
-    # Fallback: poate fișierul e chiar lângă .Rmd
-    return(read_csv(filename, show_col_types = FALSE))
+    return(readr::read_csv(filename, show_col_types = FALSE))
   } else {
-    stop(paste("EROARE CRITICĂ: Nu găsesc fișierul:", filename, "\nVerifică locația fișierelor."))
+    stop(paste("EROARE: Nu găsesc fișierul:", filename))
   }
 }
 
-# Încărcare efectivă
 datasets <- lapply(files_list, function(x) read_local_data(x, DATA_DIR))
+message("Loaded datasets dims:")
+print(sapply(datasets, dim))
 
-# Confirmare dimensiuni
-print("Datele au fost încărcate corect:")
-sapply(datasets, dim)
-run_all_models <- function(train_data, test_data, target_col, predictors, label) {
+# ---------- Helpers ----------
+standardize_train_test <- function(X_train, X_test) {
+  X_train <- as.matrix(X_train)
+  X_test  <- as.matrix(X_test)
   
-  # Eliminăm NA-uri pentru siguranță
-  train_data <- na.omit(train_data)
-  test_data  <- na.omit(test_data)
+  mu <- colMeans(X_train)
+  sdv <- apply(X_train, 2, sd)
+  sdv[sdv == 0] <- 1
   
-  X_train <- train_data[, predictors]
+  X_train_s <- sweep(sweep(X_train, 2, mu, "-"), 2, sdv, "/")
+  X_test_s  <- sweep(sweep(X_test, 2, mu, "-"), 2, sdv, "/")
+  
+  list(X_train_s = X_train_s, X_test_s = X_test_s)
+}
+
+safe_mape <- function(y_true, y_pred) {
+  y_true <- as.numeric(y_true); y_pred <- as.numeric(y_pred)
+  idx <- which(!is.na(y_true) & !is.na(y_pred) & y_true != 0)
+  if (length(idx) == 0) return(NA_real_)
+  mean(abs((y_true[idx] - y_pred[idx]) / y_true[idx])) * 100
+}
+
+rmse <- function(y_true, y_pred) sqrt(mean((y_true - y_pred)^2, na.rm = TRUE))
+mae  <- function(y_true, y_pred) mean(abs(y_true - y_pred), na.rm = TRUE)
+
+r2_sse <- function(y_true, y_pred) {
+  y_true <- as.numeric(y_true); y_pred <- as.numeric(y_pred)
+  ss_res <- sum((y_true - y_pred)^2, na.rm = TRUE)
+  ss_tot <- sum((y_true - mean(y_true, na.rm = TRUE))^2, na.rm = TRUE)
+  if (ss_tot == 0) return(NA_real_)
+  1 - ss_res / ss_tot
+}
+
+metrics_tbl <- function(y_true, y_pred) {
+  tibble::tibble(
+    RMSE = rmse(y_true, y_pred),
+    MAE  = mae(y_true, y_pred),
+    MAPE = safe_mape(y_true, y_pred),
+    R2   = r2_sse(y_true, y_pred)
+  )
+}
+
+# ---------- Core runner ----------
+run_all_models <- function(
+    train_data, test_data,
+    target_col, predictors,
+    label,
+    is_log_target = FALSE,
+    target_level_col = NULL,
+    is_log1p = FALSE
+) {
+  needed_cols <- unique(c(predictors, target_col, target_level_col))
+  
+  train_data <- train_data %>% dplyr::select(all_of(needed_cols)) %>% stats::na.omit()
+  test_data  <- test_data  %>% dplyr::select(all_of(needed_cols)) %>% stats::na.omit()
+  
+  X_train <- train_data[, predictors, drop = FALSE]
   y_train <- train_data[[target_col]]
-  X_test  <- test_data[, predictors]
+  X_test  <- test_data[, predictors, drop = FALSE]
   y_test  <- test_data[[target_col]]
   
-  # Matrici pentru glmnet
   x_train_mat <- as.matrix(X_train)
   x_test_mat  <- as.matrix(X_test)
   
-  # Cross-Validation
-  train_control <- trainControl(method = "cv", number = 5)
+  ctrl <- caret::trainControl(method = "cv", number = 5)
   
-  results <- data.frame()
+  preds <- list()
   
-  # --- 1. Ridge ---
-  cv_ridge <- cv.glmnet(x_train_mat, y_train, alpha = 0, nfolds = 5)
-  pred_ridge <- predict(cv_ridge, s = cv_ridge$lambda.min, newx = x_test_mat)
+  # 1) Ridge
+  cv_ridge <- glmnet::cv.glmnet(x_train_mat, y_train, alpha = 0, nfolds = 5, standardize = TRUE)
+  preds$Ridge <- as.numeric(predict(cv_ridge, s = cv_ridge$lambda.min, newx = x_test_mat))
   
-  # --- 2. Lasso ---
-  cv_lasso <- cv.glmnet(x_train_mat, y_train, alpha = 1, nfolds = 5)
-  pred_lasso <- predict(cv_lasso, s = cv_lasso$lambda.min, newx = x_test_mat)
+  # 2) Lasso
+  cv_lasso <- glmnet::cv.glmnet(x_train_mat, y_train, alpha = 1, nfolds = 5, standardize = TRUE)
+  preds$Lasso <- as.numeric(predict(cv_lasso, s = cv_lasso$lambda.min, newx = x_test_mat))
   
-  # --- 3. Elastic Net ---
-  enet_model <- train(
-    x = x_train_mat, y = y_train, method = "glmnet",
-    trControl = train_control, tuneLength = 5
+  # 3) Elastic Net 
+  enet_grid <- expand.grid(
+    alpha = seq(0.1, 1.0, by = 0.1),
+    lambda = 10^seq(-4, 2, length.out = 30)
   )
-  pred_enet <- predict(enet_model, x_test_mat)
-  
-  # --- 4. Random Forest ---
-  rf_model <- train(
-    x = X_train, y = y_train, method = "rf",
-    trControl = train_control, tuneGrid = expand.grid(mtry = max(2, floor(sqrt(ncol(X_train)))))
+  enet_fit <- caret::train(
+    x = x_train_mat, y = y_train,
+    method = "glmnet",
+    trControl = ctrl,
+    tuneGrid = enet_grid,
+    preProcess = c("center", "scale")
   )
-  pred_rf <- predict(rf_model, X_test)
+  preds$ElasticNet <- as.numeric(predict(enet_fit, newdata = x_test_mat))
   
-  # --- 5. Gradient Boosting ---
-  gbm_model <- train(
-    x = X_train, y = y_train, method = "gbm",
-    trControl = train_control, verbose = FALSE, tuneLength = 3
+  # 4) Random Forest 
+  p <- ncol(X_train)
+  rf_grid <- expand.grid(mtry = unique(pmax(1, floor(c(sqrt(p), p/3, p/2)))))
+  rf_fit <- caret::train(
+    x = X_train, y = y_train,
+    method = "rf",
+    trControl = ctrl,
+    tuneGrid = rf_grid
   )
-  pred_gbm <- predict(gbm_model, X_test)
+  preds$RandomForest <- as.numeric(predict(rf_fit, newdata = X_test))
   
-  # --- 6. SVR ---
-  svr_model <- svm(x = X_train, y = y_train, kernel = "radial", cost = 10, gamma = 0.1)
-  pred_svr <- predict(svr_model, X_test)
-  
-  # --- Colectare Rezultate ---
-  preds_list <- list(
-    "Ridge" = as.vector(pred_ridge), "Lasso" = as.vector(pred_lasso),
-    "ElasticNet" = as.vector(pred_enet), "RandomForest" = as.vector(pred_rf),
-    "GradientBoosting" = as.vector(pred_gbm), "SVR" = as.vector(pred_svr)
+  # 5) Gradient Boosting 
+  gbm_fit <- caret::train(
+    x = X_train, y = y_train,
+    method = "gbm",
+    trControl = ctrl,
+    verbose = FALSE,
+    tuneLength = 5
   )
+  preds$GradientBoosting <- as.numeric(predict(gbm_fit, newdata = X_test))
   
-  for (model_name in names(preds_list)) {
-    p <- preds_list[[model_name]]
+  # 6) SVR 
+  svr_grid <- expand.grid(
+    sigma = c(0.01, 0.05, 0.1),
+    C = c(1, 10, 100)
+  )
+  svr_fit <- caret::train(
+    x = X_train, y = y_train,
+    method = "svmRadial",
+    trControl = ctrl,
+    tuneGrid = svr_grid,
+    preProcess = c("center", "scale")
+  )
+  preds$SVR <- as.numeric(predict(svr_fit, newdata = X_test))
+  
+  # results on target scale (Y or l_Y)
+  res_target <- purrr::imap_dfr(preds, function(p_hat, model_name) {
+    metrics_tbl(y_test, p_hat) %>%
+      dplyr::mutate(Model = model_name, Dataset = label, Scale = target_col) %>%
+      dplyr::select(Model, Dataset, Scale, dplyr::everything())
+  })
+  
+  # results on level scale if log-target 
+  res_level <- tibble::tibble()
+  if (is_log_target && !is.null(target_level_col)) {
+    y_level <- test_data[[target_level_col]]
     
-    # Calculăm metricile DIRECT aici (fără funcții externe)
-    rmse_val <- sqrt(mean((y_test - p)^2))
-    mae_val  <- mean(abs(y_test - p))
-    mape_val <- mean(abs((y_test - p) / y_test)) * 100 
-    r2_val   <- cor(y_test, p)^2
+    inv_log <- function(x) {
+      if (is_log1p) return(expm1(x))
+      exp(x)
+    }
     
-    results <- rbind(results, data.frame(
-      Model = model_name, Dataset = label,
-      RMSE = rmse_val, MAE = mae_val, MAPE = mape_val, R2 = r2_val
-    ))
+    res_level <- purrr::imap_dfr(preds, function(p_hat_log, model_name) {
+      p_level <- as.numeric(inv_log(p_hat_log))
+      metrics_tbl(y_level, p_level) %>%
+        dplyr::mutate(Model = model_name, Dataset = label, Scale = target_level_col) %>%
+        dplyr::select(Model, Dataset, Scale, dplyr::everything())
+    })
   }
-  return(results)
+  
+  dplyr::bind_rows(res_target, res_level)
 }
+
+# =========================
+# RAW
+# =========================
 raw_train <- datasets$raw_train
 raw_test  <- datasets$raw_test
 
-# Codificare variabila dummy
 raw_train$D_bin <- ifelse(raw_train$D == "HighFreedom", 1, 0)
 raw_test$D_bin  <- ifelse(raw_test$D == "HighFreedom", 1, 0)
 
 features_raw <- c("X1", "X2", "X3", "X4", "X5", "D_bin")
-target_raw   <- "Y"
+target_raw <- "Y"
 
-results_raw <- run_all_models(raw_train, raw_test, target_raw, features_raw, "RAW")
+results_raw <- run_all_models(
+  raw_train, raw_test,
+  target_col = target_raw,
+  predictors = features_raw,
+  label = "RAW",
+  is_log_target = FALSE
+)
+print(results_raw)
 
-results_raw %>%
-  kbl(caption = "Rezultate ML - Set RAW", digits = 2) %>%
-  kable_styling(full_width = F, bootstrap_options = c("striped", "hover"))
+# =========================
+# LOG 
+# =========================
 log_train <- datasets$log_train
 log_test  <- datasets$log_test
+
+if (!("Y" %in% names(log_train))) log_train$Y <- exp(log_train$l_Y)
+if (!("Y" %in% names(log_test)))  log_test$Y  <- exp(log_test$l_Y) 
 
 log_train$D_bin <- ifelse(log_train$D == "HighFreedom", 1, 0)
 log_test$D_bin  <- ifelse(log_test$D == "HighFreedom", 1, 0)
 
 features_log <- c("l_X1", "l_X2", "X3", "X4", "l_X5", "D_bin")
-target_log   <- "l_Y"
+target_log <- "l_Y"
 
-results_log <- run_all_models(log_train, log_test, target_log, features_log, "LOG (log-scale)")
-
-results_log %>%
-  kbl(caption = "Rezultate ML - Set LOG (Scară logaritmică)", digits = 4) %>%
-  kable_styling(full_width = F, bootstrap_options = c("striped", "hover"))
-# Pregătire date
-x_train_log <- as.matrix(log_train[, features_log])
-y_train_log <- log_train[[target_log]]
-x_test_log  <- as.matrix(log_test[, features_log])
-y_test_real <- log_test$Y 
-
-# Antrenare Ridge manual
-cv_ridge_log <- cv.glmnet(x_train_log, y_train_log, alpha = 0)
-pred_log_scale <- predict(cv_ridge_log, s = cv_ridge_log$lambda.min, newx = x_test_log)
-
-# Revenire la nivel (exponentiere)
-pred_level <- exp(pred_log_scale)
-
-# Calcul erori reale DIRECT (fără funcție externă)
-ridge_log_rmse <- sqrt(mean((y_test_real - pred_level)^2))
-ridge_log_mape <- mean(abs((y_test_real - pred_level) / y_test_real)) * 100
-
-cat(paste0("Ridge LOG (revenit la nivel):\nRMSE: ", round(ridge_log_rmse, 2), 
-           "\nMAPE: ", round(ridge_log_mape, 2), "%"))
-plot_data <- data.frame(
-  Actual = y_test_real,
-  Predicted = as.vector(pred_level)
+results_log <- run_all_models(
+  log_train, log_test,
+  target_col = target_log,
+  predictors = features_log,
+  label = "LOG",
+  is_log_target = TRUE,
+  target_level_col = "Y",
+  is_log1p = FALSE  
 )
-plot_data$Residuals <- plot_data$Actual - plot_data$Predicted
+print(results_log)
 
-p1 <- ggplot(plot_data, aes(x = Actual, y = Predicted)) +
-  geom_point(color = "blue", alpha = 0.7) +
-  geom_abline(slope = 1, intercept = 0, color = "red", linetype = "dashed") +
-  labs(title = "Ridge LOG: Actual vs Predicted", x = "Valori Reale (Y)", y = "Predicții (Y)") +
-  theme_minimal()
+# =========================
+# CLUSTERS 
+# =========================
+clust_train_data <- datasets$raw_train
+clust_test_data  <- datasets$raw_test
 
-p2 <- ggplot(plot_data, aes(x = Residuals)) +
-  geom_histogram(bins = 15, fill = "steelblue", color = "white", alpha = 0.8) +
-  labs(title = "Distribuția Reziduurilor", x = "Eroare", y = "Frecvență") +
-  theme_minimal()
+clustering_features <- c("X1", "X2", "X3", "X4", "X5")
 
-grid.arrange(p1, p2, ncol = 2)
-clust_train <- datasets$raw_train
-clust_test  <- datasets$raw_test
+sc_km <- standardize_train_test(
+  clust_train_data[, clustering_features],
+  clust_test_data[, clustering_features]
+)
 
-cols_clust <- c("X1", "X2", "X3", "X4", "X5")
-
-# Scalare date
-preproc <- preProcess(clust_train[, cols_clust], method = c("center", "scale"))
-train_scaled <- predict(preproc, clust_train[, cols_clust])
-test_scaled  <- predict(preproc, clust_test[, cols_clust])
-
-# K-Means Clustering
 set.seed(42)
-km_res <- kmeans(train_scaled, centers = 3, nstart = 25)
+km_res <- stats::kmeans(sc_km$X_train_s, centers = 3, nstart = 10)
 
-# Adăugare cluster în train
-clust_train$Cluster <- km_res$cluster
-
-# Adăugare cluster în test (cel mai apropiat centru)
-closest_cluster <- function(x, centers) {
-  apply(x, 1, function(row) which.min(colSums((t(centers) - row)^2)))
+assign_cluster <- function(X_scaled, centers) {
+  X_scaled <- as.matrix(X_scaled)
+  centers <- as.matrix(centers)
+  apply(X_scaled, 1, function(row) which.min(colSums((t(centers) - row)^2)))
 }
-clust_test$Cluster <- closest_cluster(test_scaled, km_res$centers)
 
-# Rulare Modele
+clust_train_data$Cluster <- assign_cluster(sc_km$X_train_s, km_res$centers)
+clust_test_data$Cluster  <- assign_cluster(sc_km$X_test_s,  km_res$centers)
+
+# drop columns
+clust_train <- clust_train_data %>% dplyr::select(-iso_code, -country, -D)
+clust_test  <- clust_test_data  %>% dplyr::select(-iso_code, -country, -D)
+
 features_clust <- c("X1", "X2", "X3", "X4", "X5", "Cluster")
 target_clust <- "Y"
 
-results_clust <- run_all_models(clust_train, clust_test, target_clust, features_clust, "CLUSTERS")
-
-results_clust %>%
-  kbl(caption = "Rezultate ML - Set CLUSTERS", digits = 2) %>%
-  kable_styling(full_width = F, bootstrap_options = c("striped", "hover"))
+results_clust <- run_all_models(
+  clust_train, clust_test,
+  target_col = target_clust,
+  predictors = features_clust,
+  label = "CLUSTERS",
+  is_log_target = FALSE
+)
+print(results_clust)
+warnings()
+# =========================
+# PCA 
+# =========================
 pca_train <- datasets$pca_train
 pca_test  <- datasets$pca_test
+
+if (!("Y" %in% names(pca_train))) pca_train$Y <- exp(pca_train$l_Y)   
+if (!("Y" %in% names(pca_test)))  pca_test$Y  <- exp(pca_test$l_Y)
 
 pca_train$D_bin <- ifelse(pca_train$D == "HighFreedom", 1, 0)
 pca_test$D_bin  <- ifelse(pca_test$D == "HighFreedom", 1, 0)
 
 features_pca <- c("PC1", "PC2", "PC3", "PC4", "D_bin")
-target_pca   <- "l_Y"
+target_pca <- "l_Y"
 
-results_pca <- run_all_models(pca_train, pca_test, target_pca, features_pca, "PCA (log-scale)")
+results_pca <- run_all_models(
+  pca_train, pca_test,
+  target_col = target_pca,
+  predictors = features_pca,
+  label = "PCA",
+  is_log_target = TRUE,
+  target_level_col = "Y",
+  is_log1p = FALSE  
+)
+print(results_pca)
 
-results_pca %>%
-  kbl(caption = "Rezultate ML - Set PCA", digits = 4) %>%
-  kable_styling(full_width = F, bootstrap_options = c("striped", "hover"))
-# Unirea tuturor rezultatelor
-all_results <- rbind(results_raw, results_log, results_clust, results_pca)
+# =========================
+# FINAL(A)
+# =========================
+all_results_python_like <- dplyr::bind_rows(
+  results_raw   %>% dplyr::filter(Scale == "Y"),
+  results_log   %>% dplyr::filter(Scale == "l_Y"),
+  results_clust %>% dplyr::filter(Scale == "Y"),
+  results_pca   %>% dplyr::filter(Scale == "l_Y")
+)
 
-# Sortare după RMSE
-final_table <- all_results %>% arrange(RMSE)
+all_results_sorted <- all_results_python_like %>% dplyr::arrange(RMSE)
 
-# Tabel Final - Top 10
-final_table %>%
-  head(10) %>%
-  kbl(caption = "Top 10 Cele mai bune modele (RMSE minim)", digits = 4) %>%
-  kable_styling(bootstrap_options = "striped", full_width = F) %>%
-  row_spec(1, bold = T, color = "white", background = "darkgreen")
+cat("\n=== GLOBAL RANKING (mixed scales: Y vs l_Y) ===\n")
+print(all_results_sorted)
 
-# Grafic RMSE
-ggplot(all_results, aes(x = reorder(paste(Model, Dataset, sep=" - "), -RMSE), y = RMSE, fill = Dataset)) +
-  geom_bar(stat = "identity") +
-  coord_flip() +
-  labs(title = "Performanța Modelelor (RMSE)",
-       subtitle = "RMSE mai mic este mai bun",
-       x = "Model", y = "RMSE") +
-  theme_minimal() +
-  theme(legend.position = "bottom")
+ggplot2::ggplot(all_results_sorted,
+                ggplot2::aes(x = reorder(paste(Model, Dataset, sep=" - "), -RMSE),
+                             y = RMSE, fill = Dataset)) +
+  ggplot2::geom_bar(stat = "identity") +
+  ggplot2::coord_flip() +
+  ggplot2::labs(
+    title = "Performanța modelelor (RMSE) - clasament global",
+    subtitle = "Notă",
+    x = "Model", y = "RMSE"
+  ) +
+  ggplot2::theme_minimal() +
+  ggplot2::theme(legend.position = "bottom")
+
+# =========================
+# FINAL B) OPTIONAL
+# =========================
+all_results_all <- dplyr::bind_rows(results_raw, results_log, results_clust, results_pca)
+all_results_level <- all_results_all %>% dplyr::filter(Scale == "Y") %>% dplyr::arrange(RMSE)
+
+cat("\n=== OPTIONAL: COMPARABLE RANKING ON Y (level) ONLY ===\n")
+print(all_results_level)
+
