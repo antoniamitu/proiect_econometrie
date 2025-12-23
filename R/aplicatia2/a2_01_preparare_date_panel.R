@@ -10,15 +10,6 @@
 #  - trateaza lipsuri / outlieri (documentat)
 #  - aplica transformari (log/Δ) doar daca are sens (flags OFF by default)
 #  - sanity checks: corelatii + VIF pooled (orientativ)
-#
-# Exporta (DOAR *_2, dar in folderele principale ale proiectului):
-#  - data/processed_2/panel_final_2.rds (+ optional .csv)
-#  - output/tables_2/descriptives_2.csv
-#  - output/tables_2/na_report_2.csv
-#  - output/tables_2/outliers_report_2.csv
-#  - output/tables_2/correlations_2.csv
-#  - output/tables_2/vif_pooled_2.csv
-#  - output/tests_2/decisions_log_2.md
 # ==============================================================================
 
 # 1) Setup si pachete ----------------------------------------------------------
