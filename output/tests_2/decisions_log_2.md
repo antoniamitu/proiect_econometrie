@@ -37,3 +37,20 @@
 - [2025-12-16 17:57:22] Export model summary (SE robuste cluster pe tara): output/tables_2/model_summary_2.csv.
 - [2025-12-16 17:57:22] Export diagnostice: output/tables_2/diagnostics_2.csv.
 - [2025-12-16 17:57:22] Salvat model final: output/models_2/model_final_2.rds.
+- [2025-12-23 13:40:43] Import date: panel_2013_2023_FINAL.csv | dimensiune = 1353 x 10.
+- [2025-12-23 13:40:43] Standardizare variabile: Y=deposits_gdp; X1=branches_100k; X2=atms_100k; X3=legal_rights; X4=regulation; X5=gdp_ppp; D=high_freedom (factor).
+- [2025-12-23 13:40:43] Verificare chei: NU exista dubluri pe (iso_code, year).
+- [2025-12-23 13:40:43] Missing values: drop_na() pe toate variabilele selectate. Observatii: 1353 -> 1336.
+- [2025-12-23 13:40:44] Outlieri: generat raport IQR (1.5*IQR) in output/tables_2/outliers_report_2.csv. Nu s-au aplicat corectii automat.
+- [2025-12-23 13:40:44] Export descriptives: output/tables_2/descriptives_2.csv.
+- [2025-12-23 13:40:44] Export corelatii: output/tables_2/correlations_2.csv (numeric, fara year).
+- [2025-12-23 13:40:44] Export VIF pooled (orientativ): output/tables_2/vif_pooled_2.csv pentru formula Y ~ X1+X2+X3+X4+X5 + D.
+- [2025-12-23 13:40:44] Panel check: N_units=123, T_min=5, T_max=11, balanced=FALSE.
+- [2025-12-23 13:40:45] Export final: data/processed_2/panel_final_2.rds si panel_final_2.csv.
+- [2025-12-23 13:40:49] Incarcat dataset: data/processed_2/panel_final_2.rds | dimensiune = 1336 x 10.
+- [2025-12-23 13:40:49] Formula baza folosita: Y ~ X1 + X2 + X3 + X4 + X5 + D
+- [2025-12-23 13:40:49] Export teste selectie model: output/tables_2/tests_2.csv (F, LM, Hausman).
+- [2025-12-23 13:40:49] Alegere model final (alpha=0.05): Fixed Effects (FE, individual) [Hausman p<0.05] | p(F)=0, p(LM)=0, p(H)=0.0001.
+- [2025-12-23 13:40:50] Export model summary (SE robuste cluster pe tara): output/tables_2/model_summary_2.csv.
+- [2025-12-23 13:40:50] Export diagnostice: output/tables_2/diagnostics_2.csv.
+- [2025-12-23 13:40:50] Salvat model final: output/models_2/model_final_2.rds.

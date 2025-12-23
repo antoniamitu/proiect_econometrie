@@ -54,7 +54,7 @@ p_scen <- ggplot(scenarios_df, aes(x = reorder(Scenariu, Impact_Y_pp), y = Impac
   theme_minimal() +
   theme(plot.title = element_text(face = "bold", size = 14))
 
-ggsave(here("output", "plots", "scenario_impact.png"), p_scen, width = 9, height = 5)
+ggsave(here("output", "figures_2", "scenario_impact.png"), p_scen, width = 9, height = 5)
 
 print(scenarios_df)
 write_csv(scenarios_df, here("output", "tables_2", "scenarios_results.csv"))

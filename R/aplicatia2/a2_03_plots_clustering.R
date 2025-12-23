@@ -37,7 +37,7 @@ p_elbow <- fviz_nbclust(df_scaled, kmeans, method = "wss") +
 p_sil <- fviz_nbclust(df_scaled, kmeans, method = "silhouette") +
   labs(title = "Metoda Silhouette", subtitle = "Calitatea partitionarii")
 
-ggsave(here("output", "plots", "cluster_diagnostics.png"), 
+ggsave(here("output", "figures_2", "cluster_diagnostics.png"), 
        ggarrange(p_elbow, p_sil, ncol = 2), width = 10, height = 5)
 
 # 4. Aplicare K-Means (k=3 selectat pe baza analizei economice si Elbow) -------
@@ -52,7 +52,7 @@ plot_pca <- fviz_cluster(km_res, data = df_scaled,
                          main = "Clustering Tari: Tipologii Bancare (2013-2023)",
                          xlab = "Dimensiune & Infrastructura (PC1)", 
                          ylab = "Cadru Institutional (PC2)")
-ggsave(here("output", "plots", "cluster_map.png"), plot_pca, width = 10, height = 7)
+ggsave(here("output", "figures_2", "cluster_map.png"), plot_pca, width = 10, height = 7)
 
 # 5. Profilarea Clusterelor (Interpretare) -------------------------------------
 df_cluster$Cluster <- as.factor(km_res$cluster)
@@ -70,5 +70,5 @@ write_csv(cluster_profile, here("output", "tables_2", "cluster_profile.csv"))
 pheatmap(as.matrix(df_scaled), 
          cutree_rows = k,
          main = "Heatmap Indicatori Standardizati",
-         filename = here("output", "plots", "cluster_heatmap.png"),
+         filename = here("output", "figures_2", "cluster_heatmap.png"),
          width = 10, height = 12)
