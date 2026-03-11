@@ -110,6 +110,11 @@ p_scenarii <- ggplot(rezultate_scenarii,
 ggsave("output/predictions/a1_04_plot_scenarii.png",
        plot = p_scenarii, width = 8, height = 6)
 
+# ==============================================================================
+# CORECTIE: Sectiunea 6 din a1_04_model_extins_scenarii.R
+# Inlocuiti TOTUL de la linia 113 pana la linia 136 (inclusiv) cu codul de mai jos
+# ==============================================================================
+
 # 6. Predictie Specifica pentru Romania (daca exista in date) -----------------
 
 romania_data <- df_final %>%
@@ -121,18 +126,37 @@ if (nrow(romania_data) > 0) {
   
   valoare_reala   <- romania_data$Y
   valoare_prezisa <- exp(pred_ro[1, "fit"])
+  gap_pp          <- valoare_reala - valoare_prezisa
   
   cat("\n=== ANALIZA PENTRU ROMANIA ===\n")
-  cat("Valoare Reala (Depozite % PIB):",
-      round(valoare_reala, 2), "%\n")
-  cat("Valoare Estimata de Model:     ",
-      round(valoare_prezisa, 2), "%\n")
+  cat("Valoare Reala (Depozite % PIB):", round(valoare_reala, 2), "%\n")
+  cat("Valoare Estimata de Model:     ", round(valoare_prezisa, 2), "%\n")
+  cat("GAP (Real - Estimat):          ", round(gap_pp, 2), "pp\n")
   
   if (valoare_reala < valoare_prezisa) {
     cat("Concluzie: Romania performeaza SUB potentialul indicat de model.\n")
   } else {
     cat("Concluzie: Romania performeaza PESTE potentialul indicat de model.\n")
   }
+  
+  # Salvam rezultatul intr-un CSV pentru trasabilitate
+  rezultat_romania <- data.frame(
+    Tara            = "Romania",
+    iso_code        = "ROU",
+    Y_real          = round(valoare_reala, 2),
+    Y_estimat       = round(valoare_prezisa, 2),
+    GAP_pp          = round(gap_pp, 2),
+    CI_lower        = round(exp(pred_ro[1, "lwr"]), 2),
+    CI_upper        = round(exp(pred_ro[1, "upr"]), 2),
+    Concluzie       = ifelse(valoare_reala < valoare_prezisa,
+                             "Sub potential", "Peste potential")
+  )
+  
+  write.csv(rezultat_romania,
+            "output/predictions/a1_04_romania_diagnostic.csv",
+            row.names = FALSE)
+  
+  cat("\nRezultat salvat in: output/predictions/a1_04_romania_diagnostic.csv\n")
 }
 
 # Salvarea setului complet de date logaritmate
