@@ -123,7 +123,7 @@ dev.off()
 
 # Q-Q Plot (Punctele ar trebui sa fie mai aproape de linie decat in modelul brut)
 png("output/figures/a1_04_qq_plot_log.png", width = 800, height = 600)
-qqnorm(resid_log, main = "Q-Q Plot Reziduuri (Model Log)")
+qqnorm(resid_log, main = "Q-Q Plot Residuals (Model Log)")
 qqline(resid_log, col = "red", lwd = 2)
 dev.off()
 

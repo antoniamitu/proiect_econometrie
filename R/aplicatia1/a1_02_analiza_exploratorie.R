@@ -73,13 +73,13 @@ write.csv(stats_extra,
 p1 <- ggplot(df, aes(x = Y)) +
   geom_histogram(bins = 20, fill = "steelblue", color = "white") +
   theme_minimal() +
-  labs(title = "Distributia Y (Depozite % PIB)", x = "Y", y = "Frecventa")
+  labs(title = "Y Distribution (Deposits % PIB)", x = "Y", y = "Frequency")
 
 # Histograma pentru X5 (PIB per capita) - de obicei foarte asimetrica
 p2 <- ggplot(df, aes(x = X5)) +
   geom_histogram(bins = 20, fill = "darkred", color = "white") +
   theme_minimal() +
-  labs(title = "Distributia X5 (PIB per capita)", x = "X5", y = "Frecventa")
+  labs(title = "X5 Distribution (PIB per capita)", x = "X5", y = "Frequency")
 
 # Afisam graficele in RStudio
 grid.arrange(p1, p2, ncol = 2)
@@ -138,7 +138,7 @@ png("output/figures/a1_02_corrplot.png", width = 800, height = 600)
 corrplot(cor_matrix, method = "color", type = "upper", 
          addCoef.col = "black",
          tl.col = "black", tl.srt = 45,
-         title = "Matricea de Corelatie", mar = c(0,0,1,0))
+         title = "Correlation Matrix", mar = c(0,0,1,0))
 dev.off()
 
 # INTERPRETARE:
