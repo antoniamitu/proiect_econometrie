@@ -68,7 +68,7 @@ pca_result <- prcomp(df_scaled, center = TRUE, scale. = FALSE) # deja scalat
 
 # Scree Plot
 p_scree <- fviz_eig(pca_result, addlabels = TRUE, ylim = c(0, 60),
-                    main = "Scree Plot - Varianta explicata")
+                    main = "Scree Plot - Explained variances")
 ggsave("output/advanced_analysis/a1_02f_pca_scree.png",
        plot = p_scree, width = 6, height = 4)
 

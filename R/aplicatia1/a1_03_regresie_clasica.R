@@ -68,8 +68,8 @@ sw_test <- shapiro.test(resid_raw)
 # Histograma Reziduurilor + curba normala
 png("output/figures/a1_03_hist_residuals_raw.png", width = 800, height = 600)
 hinfo <- hist(resid_raw, breaks = 20, col = "lightblue",
-              main = "Histograma Reziduurilor (Raw)",
-              xlab = "Reziduuri")
+              main = "Residuals Histogram (Raw)",
+              xlab = "Residuals")
 curve(dnorm(x, mean = mean(resid_raw), sd = sd(resid_raw)) *
         length(resid_raw) * diff(hinfo$breaks)[1],
       add = TRUE, col = "red", lwd = 2)
